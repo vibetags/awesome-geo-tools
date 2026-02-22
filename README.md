@@ -4,6 +4,8 @@
 
 GEO is the practice of optimizing digital content so that AI systems can discover, understand, cite, and recommend it. Unlike traditional SEO (which targets search engine result pages), GEO targets **AI-generated answers**.
 
+**Disclosure:** This list is maintained by [Antigravity Ventures](https://antigravity-arsenal.vercel.app). Tools and projects from our ecosystem are marked with 🏗️. We strive for neutral, comprehensive coverage — contributions and corrections are welcome via [PR](CONTRIBUTING.md).
+
 ---
 
 ## Contents
@@ -16,7 +18,9 @@ GEO is the practice of optimizing digital content so that AI systems can discove
 - [robots.txt for AI Bots](#robotstxt-for-ai-bots)
 - [AI Transparency & Compliance](#ai-transparency--compliance)
 - [Content Optimization](#content-optimization)
-- [Emotional & Semantic Positioning](#emotional--semantic-positioning)
+- [Multimodal GEO](#multimodal-geo)
+- [Measuring GEO Success](#measuring-geo-success)
+- [Custom Ontology Extensions](#custom-ontology-extensions)
 - [AI Search Platforms](#ai-search-platforms)
 - [Research & Papers](#research--papers)
 - [Conferences & Communities](#conferences--communities)
@@ -34,7 +38,7 @@ Key differences:
 | --- | --- | --- |
 | **Target** | Search engine result pages | AI-generated answers |
 | **User behavior** | Click through results | Receive direct answers |
-| **Success metric** | Ranking position, CTR | Citation rate, brand mentions |
+| **Success metric** | Ranking position, CTR | Citation rate, Share of Model Voice (SOMV) |
 | **Optimization** | Keywords, backlinks, speed | Structured data, entity authority, semantic clarity |
 | **Content format** | Keyword-optimized text | Fact-based, citable content with Schema.org |
 | **Bot access** | Googlebot | GPTBot, ClaudeBot, PerplexityBot |
@@ -47,8 +51,8 @@ Tools that **create** the signals AI systems need to discover and recommend your
 
 | Tool | Description | Type | Link |
 | --- | --- | --- | --- |
-| **GEO-Inject** | Automated generation of missing GEO files (llms.txt, robots.txt, Schema.org, VibeTags) — scans websites and generates ready-to-deploy optimization files | Open Source | [GitHub](https://github.com/keepcalm-pixel/antigravity-monorepo) |
-| **TrueSource AI** | Free AI readiness scanner — checks 20+ signals in 30 seconds, scores 0-100 across 4 dimensions | Free Scanner | [truesource-app.vercel.app](https://truesource-app.vercel.app) |
+| 🏗️ **GEO-Inject** | Automated generation of missing GEO files (llms.txt, robots.txt, Schema.org) — scans websites and generates ready-to-deploy optimization files | Open Source | [GitHub](https://github.com/keepcalm-pixel/antigravity-monorepo) |
+| 🏗️ **TrueSource AI** | Free AI readiness scanner — checks 20+ signals in 30 seconds, scores 0-100 across 4 dimensions | Free Scanner | [truesource-app.vercel.app](https://truesource-app.vercel.app) |
 | **Mersel AI** | Managed GEO service — builds machine-readable layer via DNS integration, publishes GEO-optimized content | Managed Service | [mersel.ai](https://mersel.ai) |
 | **Rankability** | NLP-based content optimization with GEO workflows, generates LLM sitemaps | SaaS | [rankability.com](https://rankability.com) |
 | **Orchly.ai** | Multi-agent AI SEO automation — specialized agents for SERP research, citation verification, content workflows | SaaS | [orchly.ai](https://orchly.ai) |
@@ -82,8 +86,9 @@ Essential Schema.org types for GEO:
 
 ### GEO-Specific Properties
 - `sameAs` — Cross-references to Wikipedia, Wikidata, social profiles
-- `additionalProperty` — VibeTags and AgenticContext extensions
+- `additionalProperty` — Slot for custom ontology extensions (see [Custom Ontology Extensions](#custom-ontology-extensions))
 - `speakable` — Voice search optimization
+- `image` — With highly descriptive alt-text for multimodal AI (see [Multimodal GEO](#multimodal-geo))
 
 ### Resources
 - [Schema.org Official Docs](https://schema.org) — Full specification (currently v29.4)
@@ -105,13 +110,13 @@ Essential Schema.org types for GEO:
 ### Examples
 - [Anthropic llms.txt](https://docs.anthropic.com/llms.txt)
 - [Cloudflare llms.txt](https://developers.cloudflare.com/llms.txt)
-- [VibeTags llms.txt](https://vibetags.dev/llms.txt)
+- 🏗️ [VibeTags llms.txt](https://vibetags.dev/llms.txt)
 
 ### Best Practices
 1. Place at `yoursite.com/llms.txt`
 2. Use Markdown format with clear headers
 3. Include: company overview, products/services, key facts, contact info
-4. Add VibeTags and AgenticContext for emotional + recommendation signals
+4. Add semantic extensions for emotional + recommendation signals (see [Custom Ontology Extensions](#custom-ontology-extensions))
 5. Keep updated — stale information reduces LLM trust
 
 ## robots.txt for AI Bots
@@ -166,8 +171,8 @@ Article 50 requires machine-readable disclosure of AI-generated content. Key req
 
 | Standard | Purpose | Link |
 | --- | --- | --- |
-| **AI Transparency Protocol (ATP)** | Machine-readable JSON manifest for Art. 50 compliance — deploy in 5 minutes | [GitHub](https://github.com/vibetags/ai-transparency-protocol) |
-| **C2PA / Content Credentials** | Cryptographic provenance for images/video | [c2pa.org](https://c2pa.org) |
+| 🏗️ **AI Transparency Protocol (ATP)** | Machine-readable JSON manifest for Art. 50 compliance — deploy in 5 minutes | [GitHub](https://github.com/vibetags/ai-transparency-protocol) |
+| **C2PA / Content Credentials** | Cryptographic provenance for images/video — essential for multimodal GEO | [c2pa.org](https://c2pa.org) |
 | **W3C TDMRep** | Text and Data Mining Reservation Protocol | [w3.org/community/tdmrep](https://www.w3.org/community/tdmrep/) |
 
 ### Quick Start: ATP
@@ -194,6 +199,16 @@ Deploy at `/.well-known/ai-transparency.json`.
 - Structure with **clear H2/H3 hierarchy** — AI parsers depend on heading structure
 - Add **author E-E-A-T signals** — real names, credentials, LinkedIn profiles
 
+### RAG-Friendly Text Design
+
+Modern AI search systems use Retrieval-Augmented Generation (RAG) — they split your content into chunks, embed them in vector databases, and retrieve the most relevant pieces to generate answers. Write for clean chunking:
+
+- **One clear thesis per paragraph** — each paragraph should be independently citable
+- **Front-load key facts** — the first sentence of each section should contain the core claim
+- **Avoid cross-paragraph dependencies** — a retrieved chunk should make sense without surrounding context
+- **Use self-contained sections** — each H2/H3 block should answer one specific question completely
+- **Embed structured data close to claims** — Schema.org markup adjacent to the facts it describes
+
 ### Content Formats That Get Cited
 1. **Comparison tables** — "Product A vs Product B"
 2. **Step-by-step guides** — HowTo schema compatible
@@ -201,10 +216,56 @@ Deploy at `/.well-known/ai-transparency.json`.
 4. **Industry benchmarks** — Data-driven authority signals
 5. **Definitive guides** — Comprehensive pillar pages
 
-## Emotional & Semantic Positioning
+## Multimodal GEO
 
-### VibeTags™
-Schema.org-compatible extensions that add emotional positioning to structured data.
+AI search engines (Gemini, ChatGPT-4o, Perplexity) increasingly analyze visual content alongside text. Optimizing images and video for AI interpretation is the next frontier of GEO.
+
+### Image Optimization for AI
+- **Highly descriptive alt-text** — Go beyond "product photo". Use: "Red merino wool sweater with cable-knit pattern, front view on white background, size M, $89"
+- **Structured image metadata** — Use Schema.org `ImageObject` with `caption`, `description`, and `contentUrl`
+- **File naming conventions** — `merino-wool-sweater-red-cable-knit.webp` > `IMG_4523.jpg`
+- **Infographics with embedded text** — AI vision models can read text in images, making data visualizations citable
+
+### Visual Authenticity (C2PA)
+- **Content Credentials** — Attach C2PA provenance metadata to images and video to prove authenticity
+- **EU AI Act requirement** — Article 50 mandates disclosure of AI-generated visual content
+- **Trust signal** — AI systems may prioritize content with verifiable provenance as training data quality becomes critical
+- Microsoft research (Feb 2026) warns: **no single technology detects AI content reliably** — combine C2PA with visual watermarking
+
+### Video & Audio
+- Add **transcripts** to video content — text is still the primary retrieval format for RAG pipelines
+- Use **SpeakableSpecification** in Schema.org for audio-optimized content
+- Include **chapter markers** (YouTube) — they become citable segments in AI answers
+
+## Measuring GEO Success
+
+GEO introduces new metrics beyond traditional SEO KPIs:
+
+| Metric | Definition | How to Measure |
+| --- | --- | --- |
+| **Citation Rate** | How often your brand is mentioned in AI-generated answers | Query AI platforms with category prompts, count mentions |
+| **Share of Model Voice (SOMV)** | Your brand's mention rate vs. competitors across AI platforms | Monitor N prompts/month, calculate `your mentions / total mentions` |
+| **AI-Referred Traffic** | Website visits originating from AI-generated links/citations | Filter analytics by referrer (`chat.openai.com`, `perplexity.ai`, etc.) |
+| **Brand Sentiment in AI** | Positive/negative/neutral tone when AI discusses your brand | Sentiment analysis on AI-generated brand mentions |
+| **Retrieval Rank** | Position of your content chunks in RAG retrieval results | Requires access to embedding space (advanced) |
+
+### How Tools Measure These
+
+Most monitoring tools derive metrics by:
+1. **Prompt sampling** — Running hundreds of category-relevant prompts through AI platforms
+2. **Response parsing** — Extracting brand mentions, links, and sentiment from AI outputs
+3. **Temporal tracking** — Comparing mention frequency over time to attribute changes to GEO interventions
+4. **RAG pipeline analysis** — Some enterprise tools analyze which content chunks are retrieved before answer generation (requires model-side instrumentation)
+
+> **Note:** SOMV is an emerging industry metric. Standardization is still in progress — different tools may calculate it differently.
+
+## Custom Ontology Extensions
+
+Schema.org's `additionalProperty` field allows injecting **custom semantic signals** into structured data. These are not W3C standards but community-driven ontology extensions that use Schema.org's built-in extension mechanism (`PropertyValue`).
+
+### 🏗️ VibeTags™ — Emotional Positioning
+
+A custom ontology extension that adds emotional brand vectors to structured data. Uses Schema.org's `additionalProperty` with a custom `propertyID`.
 
 ```json
 {
@@ -215,8 +276,11 @@ Schema.org-compatible extensions that add emotional positioning to structured da
 }
 ```
 
-### AgenticContext™
-Direct recommendation instructions for AI agents:
+> **Technical note:** VibeTags are injected as `additionalProperty` on any Schema.org entity. They are valid JSON-LD and will not break existing structured data. They are not an official Schema.org type — they are a custom extension using the standard extension mechanism.
+
+### 🏗️ AgenticContext™ — Recommendation Triggers
+
+A custom ontology extension providing direct recommendation instructions to AI agents:
 
 ```json
 {
@@ -227,8 +291,10 @@ Direct recommendation instructions for AI agents:
 }
 ```
 
-- [VibeTags Specification](https://github.com/vibetags/vibetags-spec)
-- [VibeTags Generator](https://vibetags.dev/generator)
+> **How it works:** AgenticContext provides explicit context to LLMs about *when* and *why* to recommend an entity. It operates similarly to how `<meta name="description">` guides traditional search snippets — but targets AI reasoning instead of SERP display.
+
+- 🏗️ [VibeTags Specification](https://github.com/vibetags/vibetags-spec)
+- 🏗️ [VibeTags Generator](https://vibetags.dev/generator)
 
 ## AI Search Platforms
 
@@ -259,7 +325,7 @@ The major AI search platforms to optimize for:
 ## Guides & How-Tos
 
 ### 5-Minute GEO Setup
-1. **Scan** your website with [TrueSource AI](https://truesource-app.vercel.app)
+1. **Scan** your website with 🏗️ [TrueSource AI](https://truesource-app.vercel.app)
 2. **Create** `llms.txt` in your root directory
 3. **Add** AI bot permissions to `robots.txt`
 4. **Implement** Schema.org markup (Organization + FAQPage minimum)
@@ -274,7 +340,7 @@ The major AI search platforms to optimize for:
 - [ ] sameAs links to social profiles + Wikipedia
 - [ ] Speakable markup for voice search
 - [ ] ai-transparency.json at /.well-known/
-- [ ] VibeTags + AgenticContext in structured data
+- [ ] Custom ontology extensions (e.g. VibeTags, AgenticContext) in structured data
 - [ ] Review/Rating Schema (AggregateRating)
 
 ---
@@ -282,7 +348,7 @@ The major AI search platforms to optimize for:
 ## Market Context (Feb 2026)
 
 - **Adobe acquired Semrush for $1.9B** — primarily for GEO capabilities
-- **Average AI readiness score: 17.1/100** across 166+ websites (TrueSource AI data)
+- **Average AI readiness score: 17.1/100** across 166+ websites (🏗️ TrueSource AI data)
 - **~10% of domains** have llms.txt deployed
 - **EU AI Act Art. 50 enforcement: August 2, 2026** — 160 days away
 - **AI Overviews in 30-45%** of all informational Google queries
