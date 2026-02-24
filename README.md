@@ -4,7 +4,7 @@
 
 GEO is the practice of optimizing digital content so that AI systems can discover, understand, cite, and recommend it. Unlike traditional SEO (which targets search engine result pages), GEO targets **AI-generated answers**.
 
-**Disclosure:** This list is maintained by [Antigravity Ventures](https://antigravity-arsenal.vercel.app). Tools and projects from our ecosystem are marked with 🏗️. We strive for neutral, comprehensive coverage — contributions and corrections are welcome via [PR](CONTRIBUTING.md).
+**Disclosure:** This list is maintained by [Hope & Glory Studio](https://hopeandglory.studio). Tools and projects from our ecosystem are marked with 🏗️. We strive for neutral, comprehensive coverage — contributions and corrections are welcome via [PR](CONTRIBUTING.md).
 
 ---
 
@@ -369,4 +369,4 @@ This list is released under [CC0 1.0 Universal](LICENSE).
 
 ---
 
-Curated by [Sascha Deforth](https://www.linkedin.com/in/deforth/) / [Antigravity Ventures](https://antigravity-arsenal.vercel.app)
+Curated by **[Sascha Deforth](https://www.linkedin.com/in/deforth/)** ([GitHub](https://github.com/keepcalm-pixel)) / [Hope & Glory Studio](https://hopeandglory.studio)
