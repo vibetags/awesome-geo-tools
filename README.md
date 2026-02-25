@@ -70,9 +70,9 @@ Tools that **track** how your brand appears in AI-generated answers.
 | **Yolando** | GEO/AEO platform — brand visibility monitoring, competitive intelligence, content optimization | ChatGPT, Perplexity, Google AI Overviews | [yolando.com](https://yolando.com) |
 | **Peec AI** | AI search analytics — tracks visibility, position, and sentiment with real-time citation alerts | ChatGPT, Perplexity, Gemini | [peec.ai](https://peec.ai) |
 | **Otterly.ai** | AI search monitoring and optimization platform | ChatGPT, Perplexity, Google AI | [otterly.ai](https://otterly.ai) |
-| **Scrunch AI** | AI brand intelligence with AXP scoring ($3.2M Seed) | Multiple AI platforms | [scrunch.ai](https://scrunch.ai) |
+| **Scrunch AI** | AI brand intelligence with AXP scoring ($3.2M Seed) | Multiple AI platforms | [scrunchai.com](https://scrunchai.com) |
 | **AIclicks** | External LLM visibility, AEO, and brand intelligence across major LLMs | ChatGPT, Gemini, Claude, Perplexity, Grok | [aiclicks.io](https://aiclicks.io) |
-| **Chatbeat** | Brand score and average position monitoring — tracks how AI models respond to brand queries | ChatGPT, Gemini, Claude | [chatbeat.co](https://chatbeat.co) |
+| **Chatbeat** | Brand score and average position monitoring — tracks how AI models respond to brand queries | ChatGPT, Gemini, Claude, DeepSeek, Perplexity | [chatbeat.com](https://chatbeat.com) |
 | **Sight AI** | AI-native brand mention tracking across multiple models with content optimization insights | ChatGPT, Gemini, Claude, Perplexity | [trysight.ai](https://trysight.ai) |
 | **BrightEdge** | Enterprise SEO platform with AI search visibility tracking (SearchIQ + Copilot features) | Google AI Overviews, ChatGPT | [brightedge.com](https://brightedge.com) |
 
@@ -114,8 +114,8 @@ Essential Schema.org types for GEO:
 - **527% YoY growth** in AI search traffic (2025), with 70%+ of AI searches ending without a click
 
 ### Examples
-- [Anthropic llms.txt](https://docs.anthropic.com/llms.txt)
 - [Cloudflare llms.txt](https://developers.cloudflare.com/llms.txt)
+- [Perplexity llms.txt](https://docs.perplexity.ai/llms.txt)
 - 🏗️ [VibeTags llms.txt](https://vibetags.studio/llms.txt)
 
 ### Best Practices
@@ -312,7 +312,7 @@ A custom ontology extension providing direct recommendation instructions to AI a
 > **How it works:** AgenticContext provides explicit context to LLMs about *when* and *why* to recommend an entity. It operates similarly to how `<meta name="description">` guides traditional search snippets — but targets AI reasoning instead of SERP display.
 
 - 🏗️ [VibeTags Specification](https://github.com/vibetags/vibetags-spec)
-- 🏗️ [VibeTags Generator](https://vibetags.studio/generator)
+- 🏗️ [VibeGap-Scan](https://vibetags.studio/scan)
 
 ## AI Search Platforms
 
@@ -333,9 +333,8 @@ The major AI search platforms to optimize for:
 ## Research & Papers
 
 - [GEO: Generative Engine Optimization](https://arxiv.org/abs/2311.09735) — Original research paper (Georgia Tech, Princeton, IIT Delhi)
-- [Optimizing LLM Visibility](https://arxiv.org/abs/2402.00371) — Strategies for brand representation in LLMs
 - [Microsoft: No Single Technology Detects AI Content](https://www.microsoft.com/en-us/research/) — "Media Integrity and Authentication" report (Feb 2026)
-- [AI Search Traffic Growth: 527% YoY](https://credofy.com) — AI search behavior analysis, 70%+ zero-click rate
+- [AI Search Traffic Growth: 527% YoY](https://searchengineland.com/ai-traffic-report-2025-previsible-454640) — Previsible 2025 AI Traffic Report, 70%+ zero-click rate
 
 ## Conferences & Communities
 
@@ -377,7 +376,7 @@ The major AI search platforms to optimize for:
 - **AI Overviews in 30-45%** of all informational Google queries
 - **ChatGPT launched Shopping Ads** (Feb 2026) — contextual targeting, $60 CPM, no behavioral tracking
 - **Perplexity dropped all ads** (Feb 2026) — pivoting to subscription-only, partnered with Samsung Galaxy S26
-- **AI search traffic grew 527% YoY** — 70%+ of AI searches end without a click to external site
+- **AI search traffic grew 527% YoY** (Previsible 2025 AI Traffic Report) — 70%+ of AI searches end without a click to external site
 - **80% of enterprises** expected to deploy generative AI applications by 2026
 - **DeepSeek R1** emerged as open-source competitor — strong reasoning, used in enterprise RAG pipelines
 
