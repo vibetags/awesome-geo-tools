@@ -321,7 +321,7 @@ The major AI search platforms to optimize for:
 | Platform | Crawler | Monthly Users | Notes |
 | --- | --- | --- | --- |
 | **Google AI Overviews** | Googlebot / Google-Extended | Billions | In 30-45% of informational queries |
-| **ChatGPT** | GPTBot / ChatGPT-User | 300M+ weekly | Shopping Ads launched Feb 2026 — $60 CPM, $200K min spend, contextual targeting |
+| **ChatGPT** | GPTBot / ChatGPT-User | 800M+ weekly | Shopping Ads Feb 2026, Instant Checkout via Stripe (Agentic Commerce Protocol), 17-18% global query market share |
 | **Perplexity** | PerplexityBot | 15M+ | Dropped ads entirely (Feb 2026) — subscription-only model, Samsung Galaxy S26 partnership |
 | **Claude** | ClaudeBot / anthropic-ai | Growing | Enterprise-focused, Opus 4.5/4.6 available |
 | **Gemini** | Google-Extended | Integrated in Google | Deep Think, 3.1 Pro, Agentic Vision |
@@ -374,7 +374,7 @@ The major AI search platforms to optimize for:
 - **~10% of domains** have llms.txt deployed
 - **EU AI Act Art. 50 enforcement: August 2, 2026** — 158 days away
 - **AI Overviews in 30-45%** of all informational Google queries
-- **ChatGPT launched Shopping Ads** (Feb 2026) — contextual targeting, $60 CPM, no behavioral tracking
+- **ChatGPT launched Shopping Ads + Instant Checkout** (Feb 2026) — Agentic Commerce Protocol via Stripe, 17-18% global query market share
 - **Perplexity dropped all ads** (Feb 2026) — pivoting to subscription-only, partnered with Samsung Galaxy S26
 - **AI search traffic grew 527% YoY** (Previsible 2025 AI Traffic Report) — 70%+ of AI searches end without a click to external site
 - **80% of enterprises** expected to deploy generative AI applications by 2026
