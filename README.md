@@ -75,6 +75,8 @@ Tools that **track** how your brand appears in AI-generated answers.
 | **Chatbeat** | Brand score and average position monitoring — tracks how AI models respond to brand queries | ChatGPT, Gemini, Claude, DeepSeek, Perplexity | [chatbeat.com](https://chatbeat.com) |
 | **Sight AI** | AI-native brand mention tracking across multiple models with content optimization insights | ChatGPT, Gemini, Claude, Perplexity | [trysight.ai](https://trysight.ai) |
 | **BrightEdge** | Enterprise SEO platform with AI search visibility tracking (SearchIQ + Copilot features) | Google AI Overviews, ChatGPT | [brightedge.com](https://brightedge.com) |
+| **Ahrefs** | Brand Radar + AI Forecasting — brand visibility tracking in AI-generated content with predictive trend analysis | Google AI Overviews, ChatGPT | [ahrefs.com](https://ahrefs.com) |
+| **Similarweb** | Gen AI Intelligence — brand tracking across AI platforms with competitive share of voice | ChatGPT, Gemini, Perplexity | [similarweb.com](https://similarweb.com) |
 
 ## Structured Data & Schema.org
 
@@ -99,6 +101,9 @@ Essential Schema.org types for GEO:
 - [Schema.org Official Docs](https://schema.org) — Full specification (currently v29.4)
 - [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
 - [Schema.org Validator](https://validator.schema.org)
+- [Yoast SEO Schema Aggregation](https://yoast.com) — SchemaMap feature via NLWeb Protocol collaboration (Mar 2026)
+
+> **Note (Mar 2026):** Google has removed support for less-used structured data types (PracticeProblem, Dataset, SpecialAnnouncement, Book Actions, Q&A, Math Solver, Image License). Core types remain: Article, Product, FAQPage, HowTo, Organization, LocalBusiness, Review, VideoObject, BreadcrumbList, Speakable.
 
 ## llms.txt Resources
 
@@ -190,7 +195,8 @@ Article 50 requires machine-readable disclosure of AI-generated content. Key req
 | Standard | Purpose | Link |
 | --- | --- | --- |
 | 🏗️ **AI Transparency Protocol (ATP)** | Machine-readable JSON manifest for Art. 50 compliance — deploy in 5 minutes | [GitHub](https://github.com/vibetags/ai-transparency-protocol) |
-| **C2PA / Content Credentials** | Cryptographic provenance for images/video — essential for multimodal GEO | [c2pa.org](https://c2pa.org) |
+| **C2PA / Content Credentials** | Cryptographic provenance for images/video — essential for multimodal GEO, progressing through ISO standards | [c2pa.org](https://c2pa.org) |
+| **C2PA Online** | Preserves C2PA-signed media files with permanent public verification links — solves social media metadata stripping problem (Mar 2026) | [c2pa.online](https://c2pa.online) |
 | **W3C TDMRep** | Text and Data Mining Reservation Protocol | [w3.org/community/tdmrep](https://www.w3.org/community/tdmrep/) |
 
 ### Quick Start: ATP
@@ -249,6 +255,9 @@ AI search engines (Gemini, ChatGPT-4o, Perplexity) increasingly analyze visual c
 - **EU AI Act requirement** — Article 50 mandates disclosure of AI-generated visual content
 - **Trust signal** — AI systems may prioritize content with verifiable provenance as training data quality becomes critical
 - Microsoft research (Feb 2026) warns: **no single technology detects AI content reliably** — combine C2PA with visual watermarking
+- **Samsung Galaxy S26** — C2PA implementation at device level, certifies origin device and applied edits
+- **Google Search** — Integrating Content Credentials (C2PA 2.1) into "About This Image" tool; YouTube expected to follow
+- **C2PA Online** (Mar 2026) — Solves the critical social media stripping problem with permanent verification links
 
 ### Video & Audio
 - Add **transcripts** to video content — text is still the primary retrieval format for RAG pipelines
@@ -320,15 +329,16 @@ The major AI search platforms to optimize for:
 
 | Platform | Crawler | Monthly Users | Notes |
 | --- | --- | --- | --- |
-| **Google AI Overviews** | Googlebot / Google-Extended | Billions | In 30-45% of informational queries |
-| **ChatGPT** | GPTBot / ChatGPT-User | 800M+ weekly | Shopping Ads Feb 2026, Instant Checkout via Stripe (Agentic Commerce Protocol), 17-18% global query market share |
-| **Perplexity** | PerplexityBot | 15M+ | Dropped ads entirely (Feb 2026) — subscription-only model, Samsung Galaxy S26 partnership |
-| **Claude** | ClaudeBot / anthropic-ai | Growing | Enterprise-focused, Opus 4.5/4.6 available |
-| **Gemini** | Google-Extended | Integrated in Google | Deep Think, 3.1 Pro, Agentic Vision |
+| **Google AI Overviews** | Googlebot / Google-Extended | Billions | In ~50% of queries (+58% YoY, BrightEdge), only 38% of citations from Top 10 pages (down from 76%), YouTube 18.2% of non-organic citations, Query Fan-Out |
+| **Google AI Mode** | Googlebot / Google-Extended | 75M+ DAUs | Shopping Ads, Direct Offers, Signal-Matching (not keyword matching), predicted to become default for logged-in users |
+| **ChatGPT** | GPTBot / ChatGPT-User | 800M+ weekly | 73.3% AI search market share, 5.7B monthly visits, GPT-5.3 Instant (27% fewer hallucinations), Codex app now on Windows, 2.5M user boycott (Pentagon contract) |
+| **Perplexity** | PerplexityBot | 15M+ | Subscription-only, Samsung Galaxy S26 partnership, Computer Agent (19 models), open-source embeddings, CoreWeave partnership, facing Merriam-Webster + Britannica lawsuits |
+| **Claude** | ClaudeBot / anthropic-ai | Growing | Enterprise-focused, Opus 4.6 + Sonnet 4.6, Memory for free users, Constitutional AI enterprise tool, downloads surging from ChatGPT boycott |
+| **Gemini** | Google-Extended | Integrated in Google | 3.1 Pro (13/16 benchmarks), 3.1 Flash-Lite ($0.25/1M input), Agentic Vision, 3 Pro Preview deprecating Mar 9 |
 | **Copilot** | Bingbot | Integrated in Microsoft | Business-oriented |
 | **DeepSeek** | DeepSeekBot | 20M+ | Open-source R1 model, strong in reasoning tasks |
-| **Grok** | — | X/Twitter users | Real-time data focus |
-| **Meta AI** | meta-externalagent | 600M+ | Integrated in WhatsApp, Instagram, Facebook |
+| **Grok** | — | X/Twitter users | 4.20 Flagship model, real-time data focus |
+| **Meta AI** | meta-externalagent | 600M+ | Integrated in WhatsApp, Instagram, Facebook, "Manus" AI Agent in Ads Manager |
 
 ## Research & Papers
 
@@ -339,6 +349,9 @@ The major AI search platforms to optimize for:
 ## Conferences & Communities
 
 - **AEO Conf** — First AI Engine Optimization conference (SF, Feb 2026) — [ahrefs.com](https://ahrefs.com)
+- **MCPconference** — First dedicated Model Context Protocol conference (NY, Mar 11, 2026) — [mcp-conference.com](https://mcp-conference.com)
+- **SXSW 2026** — Avenue Z + Profound "AEO Brand Audit" premiere (Mar 2026)
+- **Semrush Spotlight 2026** — SEO + AI Search convergence conference (London, Oct 13, 2026)
 - **Anthropic Enterprise Briefing** — "The Briefing: Enterprise Agents" (Feb 24, 2026)
 - **Search Central Live** — Google's webmaster conference series
 - **BrightonSEO** — SEO/GEO conference with growing AI visibility track
@@ -367,18 +380,23 @@ The major AI search platforms to optimize for:
 
 ---
 
-## Market Context (Feb 2026)
+## Market Context (Mar 2026)
 
-- **Adobe acquired Semrush for $1.9B** (Nov 2025) — primarily for GEO capabilities, closing H1 2026
+- **Adobe acquired Semrush for $1.9B** (Nov 2025) — primarily for GEO capabilities, closing H1 2026. Semrush 2025 revenue: $443.6M (+18% YoY)
 - **Average AI readiness score: 17.1/100** across 166+ websites (🏗️ TrueSource AI data)
 - **~10% of domains** have llms.txt deployed
-- **EU AI Act Art. 50 enforcement: August 2, 2026** — 158 days away
-- **AI Overviews in 30-45%** of all informational Google queries
-- **ChatGPT launched Shopping Ads + Instant Checkout** (Feb 2026) — Agentic Commerce Protocol via Stripe, 17-18% global query market share
-- **Perplexity dropped all ads** (Feb 2026) — pivoting to subscription-only, partnered with Samsung Galaxy S26
+- **EU AI Act Art. 50 enforcement: August 2, 2026** — 150 days away. Code of Practice 2nd draft expected March 2026
+- **AI Overviews in ~50%** of all tracked queries (+58% YoY, BrightEdge) — only 38% of AIO citations from Top 10 pages (down from 76%)
+- **Google AI Mode: 75M DAUs** — Shopping Ads, Direct Offers, Signal-Matching (not keywords)
+- **ChatGPT: 73.3% AI search market share**, 5.7B monthly visits, GPT-5.3 Instant with 27% fewer hallucinations
+- **Perplexity dropped all ads** (Feb 2026) — subscription-only, Samsung Galaxy S26 partnership, facing copyright lawsuits (News Corp, Merriam-Webster, Britannica)
 - **AI search traffic grew 527% YoY** (Previsible 2025 AI Traffic Report) — 70%+ of AI searches end without a click to external site
-- **80% of enterprises** expected to deploy generative AI applications by 2026
+- **40% of enterprise applications** expected to incorporate task-specific AI agents by end of 2026 (Gartner)
+- **Universal Agent Registry** indexes 100,000+ AI agents across platforms
+- **Nexi Group** launched MCP for Agentic Commerce in Europe (Mar 2026) — AI agents can trigger payments via conversational commands
 - **DeepSeek R1** emerged as open-source competitor — strong reasoning, used in enterprise RAG pipelines
+- **AI SEO Tools market: $2.43B** (2026 estimate)
+- **Google AI Center Berlin** — €5.5B European investment initiative (Mar 2026)
 
 ---
 
