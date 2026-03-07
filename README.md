@@ -77,6 +77,8 @@ Tools that **track** how your brand appears in AI-generated answers.
 | **BrightEdge** | Enterprise SEO platform with AI search visibility tracking (SearchIQ + Copilot features) | Google AI Overviews, ChatGPT | [brightedge.com](https://brightedge.com) |
 | **Ahrefs** | Brand Radar + AI Forecasting — brand visibility tracking in AI-generated content with predictive trend analysis | Google AI Overviews, ChatGPT | [ahrefs.com](https://ahrefs.com) |
 | **Similarweb** | Gen AI Intelligence — brand tracking across AI platforms with competitive share of voice | ChatGPT, Gemini, Perplexity | [similarweb.com](https://similarweb.com) |
+| **Market Brew** | AI-powered search engine model — simulates ranking algorithms for GEO prediction and testing | Google AI, Custom models | [marketbrew.ai](https://marketbrew.ai) |
+| **Sizzy** | AI visibility monitoring focused on brand presence in generative search environments | ChatGPT, Perplexity, Gemini | [sizzy.co](https://sizzy.co) |
 
 ## Structured Data & Schema.org
 
@@ -104,6 +106,17 @@ Essential Schema.org types for GEO:
 - [Yoast SEO Schema Aggregation](https://yoast.com) — SchemaMap feature via NLWeb Protocol collaboration (Mar 2026)
 
 > **Note (Mar 2026):** Google has removed support for less-used structured data types (PracticeProblem, Dataset, SpecialAnnouncement, Book Actions, Q&A, Math Solver, Image License). Core types remain: Article, Product, FAQPage, HowTo, Organization, LocalBusiness, Review, VideoObject, BreadcrumbList, Speakable.
+
+### Entity Disambiguation Tools
+
+Tools for resolving Entity Ambiguity — ensuring AI systems correctly identify *which* entity your content describes:
+
+| Tool | Description | Link |
+| --- | --- | --- |
+| **Google NLP API** | Entity extraction with confidence scores — identifies which entities AI associates with your URLs | [cloud.google.com/natural-language](https://cloud.google.com/natural-language) |
+| **Diffbot** | Knowledge Graph entity lookup and extraction — maps web content to structured entities | [diffbot.com](https://diffbot.com) |
+| **Google Knowledge Graph API** | Check if your entity exists in Google's Knowledge Graph | [developers.google.com/knowledge-graph](https://developers.google.com/knowledge-graph) |
+| **TagMe** | Named Entity Recognition and Linking to Wikipedia — high accuracy on entity mapping tasks | [tagme.d4science.org](https://tagme.d4science.org/) |
 
 ## llms.txt Resources
 
@@ -276,6 +289,17 @@ GEO introduces new metrics beyond traditional SEO KPIs:
 | **Brand Sentiment in AI** | Positive/negative/neutral tone when AI discusses your brand | Sentiment analysis on AI-generated brand mentions |
 | **Retrieval Rank** | Position of your content chunks in RAG retrieval results | Requires access to embedding space (advanced) |
 
+### Advanced GEO Metrics
+
+Beyond basic citation tracking, these metrics quantify the *quality* of AI visibility:
+
+| Metric | Definition | How to Measure |
+| --- | --- | --- |
+| **Position-Adjusted Word Count (PAWC)** | Textual real estate in AI answers, weighted by position — uses exponential decay to devalue end-of-answer mentions | Parse AI responses, measure word count per brand mention, apply position weighting |
+| **Semantic Cohesion Index (SCI)** | Structural integrity of content chunks — rates entity disambiguation quality, empirical data density, and vector noise level | Analyze content chunks for entity clarity, statistic density, and heading hierarchy compliance |
+| **Entity Disambiguation Rate (EDR)** | Percentage of queries where AI correctly identifies your entity vs. homonyms | Test with ambiguous queries, measure correct entity resolution rate |
+| **Citation Frequency** | How often AI cites your brand as a *primary source* vs. passing mention — requires "Grounding Safety" threshold | Parse AI responses for citation attribution, distinguish primary vs. secondary citations |
+
 ### How Tools Measure These
 
 Most monitoring tools derive metrics by:
@@ -292,14 +316,19 @@ Schema.org's `additionalProperty` field allows injecting **custom semantic signa
 
 ### 🏗️ VibeTags™ — Emotional Positioning
 
-A custom ontology extension that adds emotional brand vectors to structured data. Uses Schema.org's `additionalProperty` with a custom `propertyID`.
+A custom ontology extension that adds emotional brand vectors to structured data. Uses Schema.org's `additionalProperty` with a custom `propertyID`. **v2.1** adds mandatory Entity Disambiguation via `@id`, `sameAs`, and `mainEntityOfPage`.
 
 ```json
 {
-  "@type": "PropertyValue",
-  "propertyID": "https://vibetags.studio/ontology/vibetag",
-  "name": "VibeTag",
-  "value": "Premium, Innovative, Sustainable, Expert"
+  "@type": "Organization",
+  "@id": "https://example.com/#organization",
+  "sameAs": ["https://www.wikidata.org/wiki/Q12345"],
+  "additionalProperty": [{
+    "@type": "PropertyValue",
+    "propertyID": "https://vibetags.studio/ontology/vibetag",
+    "name": "VibeTag",
+    "value": "Premium, Innovative, Sustainable, Expert"
+  }]
 }
 ```
 
@@ -343,6 +372,7 @@ The major AI search platforms to optimize for:
 ## Research & Papers
 
 - [GEO: Generative Engine Optimization](https://arxiv.org/abs/2311.09735) — Original research paper (Georgia Tech, Princeton, IIT Delhi)
+- [Interamplify Hybrid GEO Framework](https://interamplify.com) — 3,500+ query analysis across GPT-4, Gemini, Claude, Perplexity demonstrating +40% citation prominence through Technical Justification, Statistics Addition, and Expert Citations
 - [Microsoft: No Single Technology Detects AI Content](https://www.microsoft.com/en-us/research/) — "Media Integrity and Authentication" report (Feb 2026)
 - [AI Search Traffic Growth: 527% YoY](https://searchengineland.com/ai-traffic-report-2025-previsible-454640) — Previsible 2025 AI Traffic Report, 70%+ zero-click rate
 
