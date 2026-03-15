@@ -196,14 +196,6 @@ Allow: /
 
 ## AI Transparency & Compliance
 
-### EU AI Act Article 50
-**Enforcement Deadline: August 2, 2026**
-
-Article 50 requires machine-readable disclosure of AI-generated content. Key requirements:
-- AI-generated content must be **machine-readable labeled**
-- Deepfake disclosure is **mandatory**
-- Fines: up to **€15M or 3% of global annual turnover**
-
 ### Tools & Standards
 
 | Standard | Purpose | Link |
