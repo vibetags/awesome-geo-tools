@@ -460,4 +460,4 @@ This list is released under [CC0 1.0 Universal](LICENSE).
 
 ---
 
-Curated by **[Sascha Deforth](https://www.linkedin.com/in/deforth/)** ([GitHub](https://github.com/975SDE)) / [Hope & Glory Studio](https://hopeandglory.studio)
+Curated by **[Sascha Deforth](https://www.linkedin.com/in/deforth/)** ([GitHub](https://github.com/SaschaDeforth)) / [Hope & Glory Studio](https://hopeandglory.studio)
