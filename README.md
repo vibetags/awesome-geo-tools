@@ -56,7 +56,7 @@ Tools that **create** the signals AI systems need to discover and recommend your
 | **Mersel AI** | Managed GEO service — builds machine-readable layer via DNS integration, publishes GEO-optimized content | Managed Service | [mersel.ai](https://mersel.ai) |
 | **Rankability** | NLP-based content optimization with GEO workflows, generates LLM sitemaps | SaaS | [rankability.com](https://rankability.com) |
 | **Orchly.ai** | Multi-agent AI SEO automation — specialized agents for SERP research, citation verification, content workflows | SaaS | [orchly.ai](https://orchly.ai) |
-| **Semrush AI Visibility** | Integrated AI visibility toolkit within Semrush platform — tracks brand presence across LLMs (acquired by Adobe for $1.9B) | SaaS | [semrush.com](https://semrush.com) |
+| **Semrush AI Visibility** | Integrated AI visibility toolkit within Semrush platform — tracks brand presence across LLMs (acquired by Adobe for $1.9B). Semrush One: dedicated AI Search Visibility monitoring for ChatGPT, Perplexity, Google AI Overviews. AI Visibility Toolkit with brand mentions, citations, referral traffic tracking. AI Search Health Score in Site Audit (Mar 2026) | SaaS | [semrush.com](https://semrush.com) |
 | **Synscribe** | Multi-tenant AI agent for autonomous SEO/GEO — keyword research, landing page creation, link building, blog generation. Launched "agency-replacement" SEO AI Agent (Mar 2026), positions as "product-and-agency hybrid" | SaaS | [synscribe.com](https://synscribe.com) |
 
 ## AI Visibility Monitoring
@@ -76,7 +76,7 @@ Tools that **track** how your brand appears in AI-generated answers.
 | **AIclicks** | External LLM visibility, AEO, and brand intelligence across major LLMs | ChatGPT, Gemini, Claude, Perplexity, Grok | [aiclicks.io](https://aiclicks.io) |
 | **Chatbeat** | Brand score and average position monitoring — tracks how AI models respond to brand queries | ChatGPT, Gemini, Claude, DeepSeek, Perplexity | [chatbeat.com](https://chatbeat.com) |
 | **Sight AI** | AI-native brand mention tracking across multiple models with content optimization insights | ChatGPT, Gemini, Claude, Perplexity | [trysight.ai](https://trysight.ai) |
-| **BrightEdge** | Enterprise SEO platform with AI search visibility tracking (SearchIQ + Copilot features). AIOs 44% more brand-critical than ChatGPT, ChatGPT 13x more negative sentiment near purchase, AIO coverage +58% YoY. SPARK Live 2026 AI Certification | Google AI Overviews, ChatGPT | [brightedge.com](https://brightedge.com) |
+| **BrightEdge** | Enterprise SEO platform with AI search visibility tracking (SearchIQ + Copilot features). AI Hyper Cube platform for brand visibility management in AI search. AIOs **44% more negative brand sentiment** than ChatGPT, ChatGPT **13x more negative sentiment near purchase point**. 17% of AIO citations from Top 10 (BrightEdge own data). AIO coverage +58% YoY. SPARK Live 2026 AI Certification | Google AI Overviews, ChatGPT | [brightedge.com](https://brightedge.com) |
 | **Ahrefs** | Brand Radar + AI Forecasting — brand visibility tracking in AI-generated content with predictive trend analysis | Google AI Overviews, ChatGPT | [ahrefs.com](https://ahrefs.com) |
 | **Similarweb** | Gen AI Intelligence — brand tracking across AI platforms with competitive share of voice | ChatGPT, Gemini, Perplexity | [similarweb.com](https://similarweb.com) |
 | **Market Brew** | AI-powered search engine model — simulates ranking algorithms for GEO prediction and testing | Google AI, Custom models | [marketbrew.ai](https://marketbrew.ai) |
@@ -202,7 +202,7 @@ Allow: /
 | Standard | Purpose | Link |
 | --- | --- | --- |
 | 🏗️ **AI Transparency Protocol (ATP)** | Machine-readable JSON manifest for Art. 50 compliance — deploy in 5 minutes | [GitHub](https://github.com/vibetags/ai-transparency-protocol) |
-| **C2PA / Content Credentials** | Cryptographic provenance for images/video — essential for multimodal GEO, progressing through ISO standards. IPTC study (Mar 2026): C2PA metadata recognized inconsistently across social media platforms (Instagram recognizes Meta AI, but LinkedIn/TikTok/Pinterest/YouTube do not). Label fatigue risk identified | [c2pa.org](https://c2pa.org) |
+| **C2PA / Content Credentials** | Cryptographic provenance for images/video — essential for multimodal GEO, progressing through ISO standards. IPTC study (Mar 2026): C2PA metadata recognized inconsistently across social media platforms (Instagram recognizes Meta AI, but LinkedIn/TikTok/Pinterest/YouTube do not). Label fatigue risk identified. US Senator Mark Warner (Mar 2026) urges social media + AI companies to embed content credentials, metadata, and visible watermarks in AI-generated media pre-2026 midterms | [c2pa.org](https://c2pa.org) |
 | **C2PA Online** | Preserves C2PA-signed media files with permanent public verification links — solves social media metadata stripping problem (Mar 2026) | [c2pa.online](https://c2pa.online) |
 | **Brevis Vera** | End-to-end media authenticity system — combines C2PA with Zero-Knowledge Proofs for cryptographic origin verification, "Vera-certified" badge (Mar 2026) | [brevis.network](https://brevis.network) |
 | **W3C TDMRep** | Text and Data Mining Reservation Protocol | [w3.org/community/tdmrep](https://www.w3.org/community/tdmrep/) |
@@ -355,11 +355,11 @@ The major AI search platforms to optimize for:
 
 | Platform | Crawler | Monthly Users | Notes |
 | --- | --- | --- | --- |
-| **Google AI Overviews** | Googlebot / Google-Extended | Billions | In ~48-55% of all queries (sources vary, up from >25%, 58% YoY increase), 42% organic click decline, only 38% of citations from Top 10 pages (down from 76%), AIOs on 14% of shopping queries (5.6x increase since Nov 2025), DE: top-1 CTR drops from 27% to 11% (~265M organic clicks lost monthly), YouTube 18.2% of non-organic citations, Query Fan-Out |
+| **Google AI Overviews** | Googlebot / Google-Extended | Billions | In ~48-55% of all queries (sources vary, up from >25%, 58% YoY increase), 42% organic click decline, only 38% of citations from Top 10 pages (down from 76%), AIOs on 14% of shopping queries (5.6x increase since Nov 2025), DE: top-1 CTR drops from 27% to 11% (~265M organic clicks lost monthly), YouTube 18.2% of non-organic citations, Query Fan-Out, removed "What People Suggest" crowdsourced health advice due to misinformation concerns (Mar 2026) |
 | **Google AI Mode** | Googlebot / Google-Extended | 75M+ DAUs | 93% zero-click rate, Shopping Ads, UCP-powered Checkout, new link styles (Mar 13), Search Console AI tool, "Ask About" in citation overlays, Signal-Matching, Canvas tool with coding + writing for all US users, Personal Intelligence for all free US users (Gmail/Google Photos connected, Mar 2026), Gemini 2.5 Flash as default model, Deep Research free for all |
-| **ChatGPT** | GPTBot / ChatGPT-User | 883M monthly | 80.49% AI chatbot market share (declining), GPT-5.4 live, GPT-5.3 Garlic API rollout (6x knowledge density, 2x speed), GPT-5.1 retired (Mar 11), interactive learning modules (70+ topics), only 15% of retrieved pages appear in final answers, Instant Checkout scaled back → merchant-site redirect, Shopify Agentic Storefronts, Criteo ad pilot |
+| **ChatGPT** | GPTBot / ChatGPT-User | 883M monthly | 80.49% AI chatbot market share (declining), GPT-5.4 live, GPT-5.3 Garlic API rollout (6x knowledge density, 2x speed), GPT-5.1 retired (Mar 11), interactive learning modules (70+ topics), only 15% of retrieved pages appear in final answers, File Library global rollout (excl. EEA/CH/UK) for Plus/Pro/Business (persistent PDFs/spreadsheets/images), ChatGPT conversations now appearing in Search Console, Instant Checkout scaled back → merchant-site redirect, Shopify Agentic Storefronts, Criteo ad pilot, Sora video generation integration planned |
 | **Perplexity** | PerplexityBot | 22M+ | Ad-free model, Computer for Enterprise (Gmail/Slack/GitHub/Salesforce, 19-model orchestration), Personal Computer (Mac mini local agent), CoreWeave multi-year partnership (GB200 NVL72), Amazon lawsuit (data destruction order, appealing), 78% citation rate (complex queries), Custom Skills, Model Council (multi-model consensus answers), Samsung Galaxy S26, Plaid Finance + 40+ tools, Comet iOS launched (Mar 18, Google Search default for local queries), Health Suite live (Apple Health/EHR/Wearables, Pro/Max US), Deep Research with Opus 4.5, Claude Sonnet 4.6 + Gemini 3.1 Pro + GPT-5.3-Codex + GPT-5.4 available |
-| **Claude** | ClaudeBot / anthropic-ai | Growing | Opus 4.6 (1M context, Adaptive Thinking), Sonnet 4.6 (OSWorld 72.5%), Excel + PowerPoint integration (Mar 11), Skills system for repeatable workflows, Interactive Visuals (Mar 13), Cowork → Copilot integration (end Mar), Sonnet 5 "Fennec" leaked, Code Channels via Telegram/Discord (Mar 20), Anthropic vs Pentagon hearing (Mar 24) — "no kill switch" in air-gapped deployments |
+| **Claude** | ClaudeBot / anthropic-ai | Growing | Opus 4.6 (1M context, Adaptive Thinking), Sonnet 4.6 (OSWorld 72.5%), Excel + PowerPoint integration (Mar 11), Skills system for repeatable workflows, Interactive Visuals (Mar 13), Cowork → Copilot integration (end Mar), Sonnet 5 "Fennec" leaked, Code Channels via Telegram/Discord (Mar 20), Anthropic vs Pentagon hearing (Mar 24) — "no kill switch" in air-gapped deployments, Persistent Memory for all users incl. free tier (Mar 2026) |
 | **Gemini** | Google-Extended | Integrated in Google | 3.1 Pro (13/16 benchmarks, 2.5M token context), 3.1 Flash-Lite ($0.25/1M input), Embedding 2 (multimodal), Deep in Docs/Sheets/Slides/Drive (Mar 10), 3 Pro rolling out, Agentic Gemini on Pixel (third-party app execution, Mar 2026), Built-in Tools + Custom Function Calling combination + Google Maps Grounding (Mar 18) |
 | **Copilot** | Bingbot | Integrated in Microsoft | Business-oriented |
 | **DeepSeek** | DeepSeekBot | 20M+ | Open-source R1 model, strong in reasoning tasks |
@@ -412,7 +412,7 @@ The major AI search platforms to optimize for:
 - **Adobe acquired Semrush for $1.9B** (Nov 2025) — primarily for GEO capabilities, closing H1 2026. Semrush 2025 revenue: $443.6M (+18% YoY)
 - **Average AI readiness score: 17.1/100** across 166+ websites (🏗️ TrueSource AI data)
 - **~10% of domains** have llms.txt deployed
-- **EU AI Act Art. 50 enforcement: August 2, 2026** — 133 days away. Code of Practice 2nd draft published (Mar 5), two-layer system (metadata + watermarking), feedback deadline Mar 30, final June 2026
+- **EU AI Act Art. 50 enforcement: August 2, 2026** — 131 days away. Code of Practice 2nd draft published (Mar 5), two-layer system (metadata + watermarking), feedback deadline Mar 30 (6 days), final June 2026
 - **India IT Rules 2026** (effective Feb 20) — mandatory C2PA provenance metadata, persistent machine-readable deepfake labels, 3-hour takedown window. First legally binding C2PA requirement globally
 - **AI Overviews in ~48-55%** of all Google queries (sources vary, up from >25%, 58% YoY increase), 42% organic click decline since AIO expansion, only 38% of AIO citations from Top 10 (down from 76%), AIOs on 14% of shopping queries (5.6x increase since Nov 2025)
 - **Google AI Mode: 75M DAUs** — 93% zero-click rate, UCP-powered Checkout, Shopping Ads, Signal-Matching, Canvas tool (coding + writing for all US users)
@@ -454,7 +454,22 @@ The major AI search platforms to optimize for:
 - **IAB Tech Lab CoMP** — Content Monetization Protocol for standardized LLM-Publisher content crawling agreements
 - **AI-referred visitors convert at 4.4x** higher rate vs standard organic (AdGully). 25% drop in traditional search traffic projected by end 2026
 - **~60% of Google searches** now zero-click. AI Overviews in ~18% of global searches
-- **GPT-4.x Legacy deprecation: March 26, 2026** — gpt-4-0314, -1106, -0125, -turbo-preview redirect to gpt-4.1
+- **GPT-4.x Legacy deprecation: March 26, 2026** — 2 days away. gpt-4-0314, -1106, -0125, -turbo-preview redirect to gpt-4.1
+- **Google March 2026 Core Update LIVE** — prioritizes AI content quality, enhanced E-E-A-T scoring, user engagement signals. Higher quality bar for AI-generated content. Original research + genuine expertise rewarded
+- **80% of consumers** use AI summaries for 40%+ of searches, only 19% click through to cited sources (Semrush)
+- **LinkedIn citation frequency doubled** for AI chatbot professional queries (Mar 2026)
+- **ChatGPT conversations** now appearing in Google Search Console — new analytics signal for GEO tracking
+- **Google Colab MCP Server** (open-source) — AI agents interact with Jupyter notebooks programmatically
+- **India Government MCP Server** — official statistical databases for data-driven governance via AI agents
+- **BitGo MCP Server** — institutional crypto infrastructure integration for AI development workflows
+- **Viral deepfake video** of fake missile attacks on Tel Aviv (Mar 2026) — immediate social media impact, traditional media forced to verify
+- **GEO manipulation services** used to flood AI models with targeted misinformation for product promotion (SixthTone, Mar 2026, primarily Chinese market)
+- **OpenAI Agentic Commerce Protocol (ACP)** — competing with Google UCP. Amazon also active. Salesforce, Stripe, Commerce (ex-BigCommerce) preparing UCP implementation
+- **Palo Alto Networks**: AI agent retail fraud risk — new attack vectors through agentic commerce (Mar 2026)
+- **Xiaomi MiMo-V2-Pro/Omni/TTS** (Mar 19, 2026) — multimodal AI models, previously leaked as "Hunter Alpha"
+- **Alibaba Qwen 3.5 Small** series (Mar 1, 2026) — new small-model series
+- **NVIDIA Nemotron 3 Super** (GTC Mar 2026) — enterprise inference model
+- **WordLift**: "Structured Data Is Not Enough: Why AI Search Needs a Memory Layer" — custom Knowledge Graphs for semantic AI visibility (Mar 2026)
 
 ---
 
