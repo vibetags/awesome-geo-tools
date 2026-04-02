@@ -253,7 +253,7 @@ Modern AI search systems use Retrieval-Augmented Generation (RAG) — they split
 
 ## Multimodal GEO
 
-AI search engines (Gemini, ChatGPT-4o, Perplexity) increasingly analyze visual content alongside text. Optimizing images and video for AI interpretation is the next frontier of GEO.
+AI search engines (Gemini, ChatGPT, Perplexity) increasingly analyze visual content alongside text. Optimizing images and video for AI interpretation is the next frontier of GEO.
 
 ### Image Optimization for AI
 - **Highly descriptive alt-text** — Go beyond "product photo". Use: "Red merino wool sweater with cable-knit pattern, front view on white background, size M, $89"
@@ -357,9 +357,9 @@ The major AI search platforms to optimize for:
 | Platform | Crawler | Monthly Users | Notes |
 | --- | --- | --- | --- |
 | **Google AI Overviews** | Googlebot / Google-Extended | Billions | In ~48-55% of all queries (sources vary, up from >25%, 58% YoY increase), 42% organic click decline, only 38% of citations from Top 10 pages (down from 76%), AIOs on 14% of shopping queries (5.6x increase since Nov 2025), DE: top-1 CTR drops from 27% to 11% (~265M organic clicks lost monthly), YouTube 18.2% of non-organic citations, Query Fan-Out, removed "What People Suggest" crowdsourced health advice due to misinformation concerns (Mar 2026) |
-| **Google AI Mode** | Googlebot / Google-Extended | 75M+ DAUs | 93% zero-click rate, Shopping Ads, UCP-powered Checkout, new link styles (Mar 13), Search Console AI tool, "Ask About" in citation overlays, Signal-Matching, Canvas tool with coding + writing for all US users, Personal Intelligence for all free US users (Gmail/Google Photos connected, Mar 2026), Gemini 2.5 Flash as default model, Deep Research free for all |
-| **ChatGPT** | GPTBot / ChatGPT-User | 883M monthly | 80.49% AI chatbot market share (declining), GPT-5.4 live, GPT-5.3 Garlic API rollout (6x knowledge density, 2x speed), GPT-5.1 retired (Mar 11), interactive learning modules (70+ topics), only 15% of retrieved pages appear in final answers, File Library global rollout (excl. EEA/CH/UK) for Plus/Pro/Business (persistent PDFs/spreadsheets/images), ChatGPT conversations now appearing in Search Console, Instant Checkout scaled back → merchant-site redirect, Shopify Agentic Storefronts, Criteo ad pilot, Sora video generation integration planned |
-| **Perplexity** | PerplexityBot | 22M+ | Ad-free model, Computer for Enterprise (Gmail/Slack/GitHub/Salesforce, 19-model orchestration), Personal Computer (Mac mini local agent), CoreWeave multi-year partnership (GB200 NVL72), Amazon lawsuit (data destruction order, appealing), 78% citation rate (complex queries), Custom Skills, Model Council (multi-model consensus answers), Samsung Galaxy S26, Plaid Finance + 40+ tools, Comet iOS launched (Mar 18, Google Search default for local queries), Health Suite live (Apple Health/EHR/Wearables, Pro/Max US), Deep Research with Opus 4.5, Claude Sonnet 4.6 + Gemini 3.1 Pro + GPT-5.3-Codex + GPT-5.4 available |
+| **Google AI Mode** | Googlebot / Google-Extended | 75M+ DAUs | 93% zero-click rate, Shopping Ads, UCP-powered Checkout, new link styles (Mar 13), Search Console AI tool, "Ask About" in citation overlays, Signal-Matching, Canvas tool with coding + writing for all US users (interactive workspace: planning, coding, prototyping directly in search, dual-pane experience, Apr 2026), Personal Intelligence for all free US users (Gmail/Google Photos connected, Mar 2026), Gemini 2.5 Flash as default model, Deep Research free for all |
+| **ChatGPT** | GPTBot / ChatGPT-User | 883M monthly | 80.49% AI chatbot market share (declining), GPT-5.4 live, GPT-5.3 Garlic API rollout (6x knowledge density, 2x speed), GPT-5.1 retired (Mar 11), GPT-4o fully retired from all plans incl. Business/Enterprise/Edu Custom GPTs (Apr 3, 2026; API access remains), interactive learning modules (70+ topics), only 15% of retrieved pages appear in final answers, File Library global rollout (excl. EEA/CH/UK) for Plus/Pro/Business (persistent PDFs/spreadsheets/images), ChatGPT conversations now appearing in Search Console, Self-serve advertising launching April 2026 ($200k minimum removed, SMB access, $100M annualized pilot revenue with 600+ advertisers, Criteo + Smartly as ad-tech partners), Instant Checkout scaled back → merchant-site redirect, Shopify Agentic Storefronts |
+| **Perplexity** | PerplexityBot | 22M+ | Ad-free model, Computer for Enterprise (Gmail/Slack/GitHub/Salesforce, 19-model orchestration), Personal Computer (Mac mini local agent), CoreWeave multi-year partnership (GB200 NVL72), Amazon lawsuit — preliminary injunction granted (Mar 10, 2026): Comet browser blocked from Amazon Prime access, data destruction ordered, Perplexity appealing to 9th Circuit (landmark case for agentic commerce authorization), class-action privacy lawsuit pending, 78% citation rate (complex queries), Custom Skills, Model Council (multi-model consensus answers), Samsung Galaxy S26, Plaid Finance + 40+ tools, Comet iOS launched (Mar 18, Google Search default for local queries), Health Suite live (Apple Health/EHR/Wearables, Pro/Max US), Deep Research with Opus 4.5, Claude Sonnet 4.6 + Gemini 3.1 Pro + GPT-5.3-Codex + GPT-5.4 available |
 | **Claude** | ClaudeBot / anthropic-ai | Growing | Opus 4.6 (1M context, Adaptive Thinking), Sonnet 4.6 (OSWorld 72.5%), Excel + PowerPoint integration (Mar 11), Skills system for repeatable workflows, Interactive Visuals (Mar 13), Cowork → Copilot integration (end Mar), Sonnet 5 "Fennec" leaked, Code Channels via Telegram/Discord (Mar 20), Anthropic vs Pentagon hearing (Mar 24) — "no kill switch" in air-gapped deployments, Persistent Memory for all users incl. free tier (Mar 2026) |
 | **Gemini** | Google-Extended | Integrated in Google | 3.1 Pro (13/16 benchmarks, 2.5M token context), 3.1 Flash-Lite ($0.25/1M input), Embedding 2 (multimodal), Deep in Docs/Sheets/Slides/Drive (Mar 10), 3 Pro rolling out, Agentic Gemini on Pixel (third-party app execution, Mar 2026), Built-in Tools + Custom Function Calling combination + Google Maps Grounding (Mar 18) |
 | **Copilot** | Bingbot | Integrated in Microsoft | Business-oriented |
@@ -408,17 +408,17 @@ The major AI search platforms to optimize for:
 
 ---
 
-## Market Context (Mar 2026)
+## Market Context (Apr 2026)
 
 - **Adobe acquired Semrush for $1.9B** (Nov 2025) — primarily for GEO capabilities, closing H1 2026. Semrush 2025 revenue: $443.6M (+18% YoY)
 - **Average AI readiness score: 17.1/100** across 166+ websites (🏗️ TrueSource AI data)
 - **~10% of domains** have llms.txt deployed
-- **EU AI Act Art. 50 enforcement: August 2, 2026** — 131 days away. Code of Practice 2nd draft published (Mar 5), two-layer system (metadata + watermarking), feedback deadline Mar 30 (6 days), final June 2026
+- **EU AI Act Art. 50 enforcement: August 2, 2026** — 122 days away. Code of Practice 2nd draft published (Mar 5), two-layer system (metadata + watermarking), feedback deadline passed (Mar 30), final June 2026
 - **India IT Rules 2026** (effective Feb 20) — mandatory C2PA provenance metadata, persistent machine-readable deepfake labels, 3-hour takedown window. First legally binding C2PA requirement globally
 - **AI Overviews in ~48-55%** of all Google queries (sources vary, up from >25%, 58% YoY increase), 42% organic click decline since AIO expansion, only 38% of AIO citations from Top 10 (down from 76%), AIOs on 14% of shopping queries (5.6x increase since Nov 2025)
 - **Google AI Mode: 75M DAUs** — 93% zero-click rate, UCP-powered Checkout, Shopping Ads, Signal-Matching, Canvas tool (coding + writing for all US users)
-- **ChatGPT: 80.49% AI chatbot market share** (declining), 883M monthly users, GPT-5.4 live, GPT-5.3 Garlic API rollout (6x knowledge density, 2x speed), GPT-5.1 retired, Instant Checkout scaled back (redirects to merchant sites), Shopify Agentic Storefronts, Criteo ad pilot, only 15% of retrieved pages appear in final answers
-- **Perplexity: 22M+ active monthly users**, ad-free model, Computer for Enterprise (19-model orchestration), Personal Computer (Mac mini local agent), CoreWeave multi-year partnership (GB200 NVL72), Amazon lawsuit (data destruction order), 78% citation rate vs. ChatGPT 62%, Plaid Finance + 40+ tools, Comet iOS (Mar 18), Health Suite live (Apple Health/EHR), Model Council (multi-model consensus), Deep Research with Opus 4.5
+- **ChatGPT: 80.49% AI chatbot market share** (declining), 883M monthly users, GPT-5.4 live, GPT-5.3 Garlic API rollout (6x knowledge density, 2x speed), GPT-5.1 retired, GPT-4o fully retired from all ChatGPT plans (Apr 3, 2026; API remains), Self-serve ads launching April 2026 ($200k minimum removed, $100M annualized pilot revenue), Instant Checkout scaled back (redirects to merchant sites), Shopify Agentic Storefronts, Criteo + Smartly ad-tech partners, only 15% of retrieved pages appear in final answers
+- **Perplexity: 22M+ active monthly users**, ad-free model, Computer for Enterprise (19-model orchestration), Personal Computer (Mac mini local agent), CoreWeave multi-year partnership (GB200 NVL72), Amazon lawsuit — preliminary injunction granted (Mar 10): Comet blocked from Prime, data destruction ordered, appealing to 9th Circuit, 78% citation rate vs. ChatGPT 62%, Plaid Finance + 40+ tools, Comet iOS (Mar 18), Health Suite live (Apple Health/EHR), Model Council (multi-model consensus), Deep Research with Opus 4.5
 - **AI search traffic converts at 14.2%** vs. Google's 2.8% (ExposureNinja) — AI search is 5x more effective sales channel
 - **AI search traffic grew 527% YoY** (Previsible 2025 AI Traffic Report) — 70%+ of AI searches end without a click to external site
 - **45% of consumers** use AI for at least part of their buying journey (Jan 2026, IBM)
@@ -431,7 +431,7 @@ The major AI search platforms to optimize for:
 - **Azure MCP Server** critical RCE vulnerability CVE-2026-21536 (CVSS 9.8) patched Mar 2026 — agent decision loop hijacking risk
 - **CursorJack** (Proofpoint, Mar 19) — Cursor IDE deep-link abuse for malicious MCP server installation via social engineering. OpenClaw agent: 8 CVEs accumulated (moderate to critical)
 - **SurePath AI MCP Policy Controls** (Mar 12) — real-time governance, tool blocking, anti-exfiltration for MCP servers
-- **6400+ MCP servers** registered (Feb 2026), roadmap update (Mar 9): Streamable HTTP transport, OAuth 2.1, MCP Registry for discovery, Spec Enhancement Proposals (SEPs), community working groups
+- **6400+ MCP servers** registered (Feb 2026), roadmap update (Mar 9): Streamable HTTP transport, OAuth 2.1, MCP Registry for discovery, Spec Enhancement Proposals (SEPs), community working groups. **Microsoft Copilot Studio** full MCP integration live (Apr 1, 2026) — enterprise features: VNet, DLP, SSO auth, dynamic server capability inheritance. All major platforms (Anthropic, OpenAI, Google, MS, Amazon) now have native MCP support. **Pinterest** deployed production-scale internal MCP ecosystem for engineering task automation (validates MCP as enterprise-ready)
 - **JFrog MCP Registry** (Mar 18) — system of record for MCP servers, agent skills, agentic binary assets. AI supply chain trust layer
 - **Amazon Ads MCP Server** (open beta, Mar 2026) — AI agents orchestrate campaign setup + AMC queries
 - **WordPress.com MCP Server** write capabilities (Mar 20) — AI agents create/edit/manage content directly on WordPress sites
@@ -442,7 +442,7 @@ The major AI search platforms to optimize for:
 - **Nexi Group** launched MCP for Agentic Commerce in Europe (Mar 2026) — AI agents can trigger payments via conversational commands
 - **Mirakl Nexus + J.P. Morgan Payments** — secure agentic AI agent checkout for merchants (Mar 10, 2026)
 - **NVIDIA ACP/UCP reference implementation** — end-to-end agentic commerce under merchant authority
-- **OpenAI ChatGPT advertising pilot** with Criteo (first ad-tech partner), conversational ads for Free/Go tiers (US)
+- **OpenAI ChatGPT advertising**: Self-serve tools launching April 2026 ($200k minimum commitment removed). Pilot with Criteo + Smartly exceeded $100M annualized revenue with 600+ advertisers. Conversational ad formats in development. Expanding to CA, AU, NZ. ChatGPT = paid + organic channel
 - **DeepSeek R1** emerged as open-source competitor — strong reasoning, used in enterprise RAG pipelines
 - **AI SEO Tools market: $2.43B** (2026 estimate)
 - **Google AI Center Berlin** — €5.5B European investment initiative (Mar 2026)
@@ -455,8 +455,10 @@ The major AI search platforms to optimize for:
 - **IAB Tech Lab CoMP** — Content Monetization Protocol for standardized LLM-Publisher content crawling agreements
 - **AI-referred visitors convert at 4.4x** higher rate vs standard organic (AdGully). 25% drop in traditional search traffic projected by end 2026
 - **~60% of Google searches** now zero-click. AI Overviews in ~18% of global searches
-- **GPT-4.x Legacy deprecation: March 26, 2026** — 2 days away. gpt-4-0314, -1106, -0125, -turbo-preview redirect to gpt-4.1
-- **Google March 2026 Core Update LIVE** — prioritizes AI content quality, enhanced E-E-A-T scoring, user engagement signals. Higher quality bar for AI-generated content. Original research + genuine expertise rewarded
+- **GPT-4.x Legacy deprecated** (Mar 26, 2026) — gpt-4-0314, -1106, -0125, -turbo-preview redirect to gpt-4.1. **GPT-4o fully retired** from all ChatGPT plans (Apr 3, 2026) — Business/Enterprise/Edu Custom GPTs grace period ended. API access remains
+- **Google March 2026 Core Update** — rollout since Mar 27, expected complete ~mid-April. Up to 61% CTR decline under AI Overviews (revised upward from 42%). 58% zero-click rate. E-E-A-T weighting massively strengthened. Mass-produced AI content actively demoted. Engagement signals (bounce rate, time on page) carry significantly more weight
+- **AI search interactions = ~30% of all search volume** (Apr 2026) — traditional search volume declining as users shift to conversational interfaces
+- **Grok 5** (xAI) — Q2 2026 target. Enhanced reasoning + real-time data expected
 - **80% of consumers** use AI summaries for 40%+ of searches, only 19% click through to cited sources (Semrush)
 - **LinkedIn citation frequency doubled** for AI chatbot professional queries (Mar 2026)
 - **ChatGPT conversations** now appearing in Google Search Console — new analytics signal for GEO tracking
