@@ -14,6 +14,7 @@ This repository contains a comprehensive, community-curated list of:
 - **Structured data resources** — Schema.org types essential for GEO
 - **AI transparency standards** — EU AI Act compliance (ATP, C2PA)
 - **Semantic positioning** — VibeTags, AgenticContext for emotional brand signals
+- **GEO automation via MCP** — Model Context Protocol servers for automated GEO workflows (scanning, generation, deployment, monitoring)
 - **Guides and how-tos** — from 5-minute GEO setup to comprehensive audits
 
 ## Key Facts (Feb 2026)

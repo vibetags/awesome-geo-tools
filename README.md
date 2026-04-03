@@ -21,6 +21,7 @@ GEO is the practice of optimizing digital content so that AI systems can discove
 - [Multimodal GEO](#multimodal-geo)
 - [Measuring GEO Success](#measuring-geo-success)
 - [Custom Ontology Extensions](#custom-ontology-extensions)
+- [GEO Automation via MCP](#geo-automation-via-mcp)
 - [AI Search Platforms](#ai-search-platforms)
 - [Research & Papers](#research--papers)
 - [Conferences & Communities](#conferences--communities)
@@ -349,6 +350,32 @@ A custom ontology extension providing direct recommendation instructions to AI a
 
 - 🏗️ [VibeTags Specification](https://github.com/vibetags/vibetags-spec)
 - 🏗️ [VibeGap-Scan](https://vibetags.studio/scan)
+
+## GEO Automation via MCP
+
+The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) enables AI agents to execute GEO workflows directly — scanning websites, generating optimization files, and deploying structured data through standardized tool interfaces. GEO-specific MCP servers turn any AI coding agent into a GEO implementation engine.
+
+### MCP Servers with GEO Relevance
+
+| Server | GEO Use Case | Link |
+| --- | --- | --- |
+| **WordPress MCP** | AI agents create/edit GEO-optimized content, manage Schema plugins, deploy llms.txt directly on WordPress sites | [automattic.com](https://developer.wordpress.com) |
+| **Amazon Ads MCP** | AI agents orchestrate campaigns optimized for AI search referral traffic patterns | [ads.amazon.com](https://ads.amazon.com) |
+| **Google Colab MCP** | Run GEO audit scripts and batch analysis via AI agent-controlled notebooks | [GitHub](https://github.com/niccoloraspa/colab-server) |
+| **Shopify MCP** | Product schema management, UCP readiness, AI-optimized product feeds | [shopify.dev](https://shopify.dev) |
+| **JFrog MCP Registry** | System of record for MCP servers, agent skills, and agentic binary assets — AI supply chain trust layer | [jfrog.com](https://jfrog.com) |
+| **Sanity MCP** | Headless CMS with structured content — AI agents manage Schema.org-rich content models | [sanity.io](https://sanity.io) |
+
+### Why MCP for GEO?
+
+Traditional GEO implementation requires manual file creation, schema injection, and deployment. MCP servers automate the entire pipeline:
+
+1. **Agent scans** → identifies missing GEO signals (Schema, llms.txt, robots.txt, ATP)
+2. **Agent generates** → produces deployment-ready files with correct entity identity
+3. **Agent deploys** → pushes files to CMS or repository via authenticated MCP connection
+4. **Agent monitors** → tracks citation rates and SOMV across AI platforms over time
+
+> **Note (Apr 2026):** 6,400+ MCP servers registered. Microsoft Copilot Studio, all major AI platforms (Anthropic, OpenAI, Google, Amazon), and Pinterest have production MCP deployments. GEO-specific MCP servers represent a new category of automation that connects structured data generation directly to AI agent workflows.
 
 ## AI Search Platforms
 
