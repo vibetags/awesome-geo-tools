@@ -361,7 +361,7 @@ The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) enables AI a
 | --- | --- | --- |
 | **WordPress MCP** | AI agents create/edit GEO-optimized content, manage Schema plugins, deploy llms.txt directly on WordPress sites | [automattic.com](https://developer.wordpress.com) |
 | **Amazon Ads MCP** | AI agents orchestrate campaigns optimized for AI search referral traffic patterns | [ads.amazon.com](https://ads.amazon.com) |
-| **Google Colab MCP** | Run GEO audit scripts and batch analysis via AI agent-controlled notebooks | [GitHub](https://github.com/niccoloraspa/colab-server) |
+| **Google Colab MCP** | Run GEO audit scripts and batch analysis via AI agent-controlled notebooks | [GitHub](https://github.com/googlecolab/colab-mcp) |
 | **Shopify MCP** | Product schema management, UCP readiness, AI-optimized product feeds | [shopify.dev](https://shopify.dev) |
 | **JFrog MCP Registry** | System of record for MCP servers, agent skills, and agentic binary assets — AI supply chain trust layer | [jfrog.com](https://jfrog.com) |
 | **Sanity MCP** | Headless CMS with structured content — AI agents manage Schema.org-rich content models | [sanity.io](https://sanity.io) |
