@@ -183,6 +183,15 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
+User-agent: Meta-WebIndexer
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookExternalHit
+Allow: /
+
 User-agent: DeepSeekBot
 Allow: /
 ```
@@ -195,7 +204,11 @@ Allow: /
 - `PerplexityBot` — Perplexity AI crawler
 - `Applebot-Extended` — Apple Intelligence features
 - `Bytespider` — ByteDance/TikTok AI crawler
-- `meta-externalagent` — Meta AI crawler
+- `meta-externalagent` — Meta AI training + direct content indexing
+- `Meta-WebIndexer` — **Meta AI search results** — enabling this helps Meta AI cite and link your content (critical for GEO)
+- `Meta-ExternalFetcher` — Agentic user-requested fetches, AI website navigation — **bypasses robots.txt** (like ChatGPT-User)
+- `Meta-ExternalAds` — Meta advertising product improvement
+- `FacebookExternalHit` — Social sharing previews (OG tags) — bypasses robots.txt for security checks
 - `DeepSeekBot` — DeepSeek AI crawler
 
 ## AI Transparency & Compliance
