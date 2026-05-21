@@ -442,7 +442,7 @@ The major AI search platforms to optimize for:
 - **FAQ Rich Results Deprecated** (May 7, 2026) — Google officially retired FAQ rich results support, reinforcing the shift towards comprehensive entity and semantic E-E-A-T optimization over isolated markup.
 - [Google Search Status Dashboard](https://status.search.google.com/) — Official dashboard providing real-time status and incident reports for Google Search systems (crawling, indexing, serving) and tracking active/resolved ranking updates.
 - [Google Search Central: Using the Google Search Status Dashboard](https://developers.google.com/search/docs/monitor-debug/search-status-dashboard) — Official guide explaining the issue lifecycle (detection, investigation, mitigation, resolution) and system health status definitions (Available, System Information, System Disruption, System Outage).
-
+- [Google: How we update Search to improve your results](https://blog.google/products/search/how-we-update-search/) — Official blog post detailing how Google Search is updated thousands of times a year, differentiating between incremental and core updates.
 
 ### 5-Minute GEO Setup
 1. **Scan** your website with 🏗️ [TrueSource AI](https://truesource.studio/scan)
