@@ -4,7 +4,7 @@
 
 GEO is the practice of optimizing digital content so that AI systems can discover, understand, cite, and recommend it. Unlike traditional SEO (which targets search engine result pages), GEO targets **AI-generated answers**.
 
-**Disclosure:** This list is maintained by [Hope & Glory Studio](https://hopeandglory.studio). Tools and projects from our ecosystem are marked with 🏗️. We strive for neutral, comprehensive coverage — contributions and corrections are welcome via [PR](CONTRIBUTING.md).
+**Disclosure:** This list is maintained by [Hope & Glory Studio](https://hopeandglory.studio). Tools and projects from our ecosystem are marked with 🏗️. We strive for neutral, comprehensive coverage — contributions and corrections are welcome via [PR](./CONTRIBUTING.md).
 
 ---
 
@@ -565,7 +565,7 @@ The major AI search platforms to optimize for:
 
 ## Contributing
 
-Contributions welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
+Contributions welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) first.
 
 If you know of a GEO tool, resource, or guide that should be listed here, please open a PR or issue.
 
@@ -573,7 +573,7 @@ If you know of a GEO tool, resource, or guide that should be listed here, please
 
 [![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-This list is released under [CC0 1.0 Universal](LICENSE).
+This list is released under [CC0 1.0 Universal](./LICENSE).
 
 ---
 
