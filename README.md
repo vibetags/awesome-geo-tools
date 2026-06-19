@@ -85,6 +85,7 @@ Tools that **track** how your brand appears in AI-generated answers.
 | **Sizzy** | AI visibility monitoring focused on brand presence in generative search environments | ChatGPT, Perplexity, Gemini | [sizzy.co](https://sizzy.co) |
 | **Amadora.ai** | Workflow-first AI visibility platform for agencies — tracks AI visibility and executes content improvements | ChatGPT, Perplexity, Gemini, Claude | [amadora.ai](https://amadora.ai) |
 | **Goodie AI** | GEO-first platform built specifically for AI attribution and visibility tracking (Apr 2026) | ChatGPT, Perplexity, Gemini, Claude | [goodie.ai](https://goodie.ai) |
+| **Adobe Brand Visibility** | Enterprise GEO platform (post-Semrush acquisition for $1.9B) — unified AI visibility tracking across ~300M real AI search prompts, integrated with Adobe CX Enterprise Suite for agentic content optimization. AI traffic to US retail +1,324%, travel +2,215% (Oct 2024–May 2026). Launched June 17, 2026 | ChatGPT, Google AI Mode, Microsoft Copilot, Perplexity AI | [adobe.com](https://adobe.com) |
 
 ## Structured Data & Schema.org
 
@@ -112,6 +113,8 @@ Essential Schema.org types for GEO:
 - [Yoast SEO Schema Aggregation](https://yoast.com) — SchemaMap feature via NLWeb Protocol collaboration (Mar 2026)
 
 > **Note (Mar 2026):** Google has removed support for less-used structured data types (PracticeProblem, Dataset, SpecialAnnouncement, Book Actions, Q&A, Math Solver, Image License). Core types remain: Article, Product, FAQPage, HowTo, Organization, LocalBusiness, Review, VideoObject, BreadcrumbList, Speakable.
+>
+> **Note (Jun 2026):** **FAQ Rich Results fully deprecated** — removed from Google Search (May 7), Search Console + Rich Results Test (June), API support ending August 2026. `FAQPage` Schema remains a valid Schema.org type and continues to help AI systems understand Q&A content for GEO purposes. **Schema.org Usage Statistics Dataset** launched (June 4) — first official crawl-scale usage data for Schema.org terms, monthly CSV/JSON on GitHub, domain-level aggregation in popularity buckets.
 
 ### Entity Disambiguation Tools
 
@@ -260,6 +263,15 @@ Modern AI search systems use Retrieval-Augmented Generation (RAG) — they split
 - **Use self-contained sections** — each H2/H3 block should answer one specific question completely
 - **Embed structured data close to claims** — Schema.org markup adjacent to the facts it describes
 
+### GEO Tactical Benchmarks (Jun 2026 Data)
+- **Direct-answer in first paragraph** → **+47% citation rate** in AI-generated answers
+- **Content sweet spot**: 1,500–3,000 words optimal; <800 words = highest omission risk
+- **Citation balance**: 3–8 authoritative sources ideal; 15+ sources = penalization signal
+- **Monthly content updates** → **+23% AI coverage** vs. stagnant content
+- **Content chunks**: 50–80 words per block instead of 300-word paragraphs
+- **First 120–150 words** should contain the direct answer to the page's primary question
+- **GEO-optimized sites saw 43% less negative impact** from Google May 2026 Core Update vs. SEO-only sites
+
 ### Content Formats That Get Cited
 1. **Comparison tables** — "Product A vs Product B"
 2. **Step-by-step guides** — HowTo schema compatible
@@ -321,6 +333,11 @@ Most monitoring tools derive metrics by:
 2. **Response parsing** — Extracting brand mentions, links, and sentiment from AI outputs
 3. **Temporal tracking** — Comparing mention frequency over time to attribute changes to GEO interventions
 4. **RAG pipeline analysis** — Some enterprise tools analyze which content chunks are retrieved before answer generation (requires model-side instrumentation)
+
+### Official Measurement Channels (Jun 2026)
+- **Google Search Console GenAI Reports** (June 3, 2026) — first official reports for AI Overviews, AI Mode, and Generative AI in Discover. Metrics: Impressions, Pages, Geography, Devices. No click data yet. Historical data from May 18, 2026. Opt-out toggle available (no ranking signal for classic search)
+- **Google Analytics 4 AI Assistant Measurement** — new channel for AI chatbot referral traffic attribution
+- **Bing Webmaster Tools AI Performance View** (2026) — AI visibility metrics within Bing's webmaster interface
 
 > **Note:** SOMV is an emerging industry metric. Standardization is still in progress — different tools may calculate it differently.
 
@@ -385,6 +402,13 @@ The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) enables AI a
 | **Stainless MCP** | Automated SDK and MCP server generation tooling (acquired by Anthropic for $300M+) | [stainlessapi.com](https://stainlessapi.com) |
 | **Zendesk MCP** | Connects AI agents to customer support databases and conversation logs | [zendesk.com](https://zendesk.com) |
 | **Expedia Group MCP** | Exposes travel inventory and booking details to partner agents for autonomous planning | [expediagroup.com](https://expediagroup.com) |
+| **Slack MCP Client** | GA (June 18, 2026) — Slackbot as full MCP client, central conversational interface for 20+ partner apps (Atlassian, Box, Canva, Docusign, Miro, Notion, Zoom). Slack CLI v4.3.0 with `mcp_server` manifest. Enterprise governance: admin-controlled server access per team | [slack.com](https://slack.com) |
+| **Moneris MCP** | First major payment provider with native MCP server (June 18, 2026) — AI agents interact directly with payment APIs for recommendations and transactions. "USB-C for AI payments" positioning | [moneris.com](https://moneris.com) |
+| **Autodesk Revit MCP** | Tech Preview — AI agent interaction with Revit BIM models for architecture and construction workflows | [autodesk.com](https://autodesk.com) |
+| **Mozilla MDN MCP** | AI agents access web documentation + browser compatibility data from MDN | [mozilla.org](https://mozilla.org) |
+| **Strapi MCP** | Built-in opt-in MCP server (v5.47.0) for CMS content access by AI agents | [strapi.io](https://strapi.io) |
+| **PagerDuty MCP** | MCP tools with OAuth, event orchestration, and service status for incident management | [pagerduty.com](https://pagerduty.com) |
+| **UiPath MCP** | MCP server integration in Test Manager and Autopilot Chat for RPA workflows | [uipath.com](https://uipath.com) |
 
 ### Why MCP for GEO?
 
@@ -395,9 +419,11 @@ Traditional GEO implementation requires manual file creation, schema injection, 
 3. **Agent deploys** → pushes files to CMS or repository via authenticated MCP connection
 4. **Agent monitors** → tracks citation rates and SOMV across AI platforms over time
 
-> **Note (Apr 2026):** 6,400+ MCP servers registered, **110M+ monthly SDK downloads**. Microsoft Copilot Studio, all major AI platforms (Anthropic, OpenAI, Google, Amazon), and Pinterest have production MCP deployments. **SUSE** integrates MCP across Rancher Prime, SUSE Linux, SUSE AI (SUSECON Apr 2026) — first enterprise infra vendor with platform-wide MCP, "Liz" multi-agent crew. **Google Cloud Run** fully managed remote MCP server live (Apr 2026). GEO-specific MCP servers represent a new category of automation that connects structured data generation directly to AI agent workflows.
+> **Note (Jun 2026):** **20,000+ MCP servers** in community indices (3,000+ in official registry), **110M+ monthly SDK downloads**. Microsoft Copilot Studio, all major AI platforms (Anthropic, OpenAI, Google, Amazon), and Pinterest have production MCP deployments. **SUSE** integrates MCP across Rancher Prime, SUSE Linux, SUSE AI (SUSECON Apr 2026) — first enterprise infra vendor with platform-wide MCP, "Liz" multi-agent crew. **Google Cloud Run** fully managed remote MCP server live (Apr 2026). GEO-specific MCP servers represent a new category of automation that connects structured data generation directly to AI agent workflows.
 > 
 > **Note (May 2026):** Google proposed **WebMCP** at I/O 2026, an open standard enabling websites to expose structured JavaScript-based tools directly to browser AI agents. On May 20, the NSA's AI Security Center published security guidelines (*"Model Context Protocol (MCP): Security Design Considerations for AI-Driven Automation"*) warning of stdio/HTTP transport vulnerabilities (RCE). Anthropic acquired **Stainless** (May 18) for $300M+ to automate MCP server & SDK generation.
+>
+> **Note (Jun 2026):** **MCP Spec 2026-07-28 Release Candidate** published — largest revision since launch. Breaking change: shift to **stateless protocol core** (session headers removed). New extensions: **MCP Apps** (HTML in sandboxed iframes), **Tasks** (long-running resumable work), cacheable lists with `ttlMs`. JSON Schema 2020-12 for tool definitions. Formal 12-month deprecation policy. **Slack MCP Client GA** (June 18) makes MCP mainstream in enterprise communication. **Moneris** becomes third payment provider (after Nexi, Adyen) with native MCP server. **Agentic Resource Discovery (ARD)** open standard (Apache 2.0) launched June 17 by Google + 11 partners (Microsoft, Cisco, Databricks, GitHub, GoDaddy, Hugging Face, NVIDIA, Salesforce, ServiceNow, Snowflake) for `ai-catalog.json` agent discovery manifests. **MCP Dev Summit** series: Mumbai (June 14-15), Amsterdam (Sept), San Jose (Oct).
 
 ## AI Search Platforms
 
@@ -407,12 +433,12 @@ The major AI search platforms to optimize for:
 | --- | --- | --- | --- |
 | **Google AI Overviews** | Googlebot / Google-Extended | Billions | In ~48-55% of all queries (sources vary, up from >25%, 58% YoY increase), 42% organic click decline, only 38% of citations from Top 10 pages (down from 76%), AIOs on 14% of shopping queries (5.6x increase since Nov 2025), DE: top-1 CTR drops from 27% to 11% (~265M organic clicks lost monthly), YouTube 18.2% of non-organic citations, Query Fan-Out, removed "What People Suggest" crowdsourced health advice due to misinformation concerns (Mar 2026). **I/O 2026 Updates:** Gemini 3.5 Flash default model, UCP-powered Universal Cart (spans Search, Gemini, YouTube, Gmail), Generative UI (interactive dashboards/mini-apps), 24/7 Information Agents. UCP expansion to Canada and Australia. |
 | **Google AI Mode** | Googlebot / Google-Extended | 75M+ DAUs | 93% zero-click rate, Shopping Ads, UCP-powered Checkout, new link styles (Mar 13), Search Console AI tool, "Ask About" in citation overlays, Signal-Matching, Canvas tool with coding + writing for all US users (interactive workspace: planning, coding, prototyping directly in search, dual-pane experience, Apr 2026), **AI Calling** (agents call local stores for inventory/stock, Apr 2026), Task-Based Integration (hotel price tracking + Google Wallet), "Skip digging, start guided research" in testing (Apr 2026), Personal Intelligence for all free US users (Gmail/Google Photos connected, Mar 2026). **I/O 2026 Updates:** Gemini 3.5 Flash standard default model, Universal Cart, Generative UI, Information Agents 24/7. |
-| **ChatGPT** | GPTBot / ChatGPT-User | 1B+ weekly | 80.49% AI chatbot market share (declining), **GPT-5.5 Instant** new default (May 5, 2026): 52.5% fewer hallucinations, enhanced Memory Sources transparency, Excel + Google Sheets sidebar global. GPT-5.5 Base (Apr 23, omnimodal agentic), GPT-5.4 live, GPT-5.3 Garlic API rollout (6x knowledge density, 2x speed), GPT-4o fully retired from all plans incl. Business/Enterprise/Edu Custom GPTs (Apr 3, 2026; API access remains). **May 2026 Updates:** OpenAI adopted SynthID watermarking for AI-generated images, formally joined C2PA standard, and integrated C2PA verification tools across ChatGPT/API. |
-| **Perplexity** | PerplexityBot | 100M+ MAU | **$450M+ ARR** (Mar 2026), ad-free model, Computer for Enterprise (Gmail/Slack/GitHub/Salesforce, 19-model orchestration), Personal Computer (Mac mini local agent), **Desktop Agent for Mac** (May 2026, hands-on assistance across desktop apps/files/workflows), CoreWeave multi-year partnership (GB200 NVL72), Amazon lawsuit — preliminary injunction granted (Mar 10, 2026): Comet browser blocked from Amazon Prime access, data destruction ordered, Perplexity appealing to 9th Circuit, class-action privacy lawsuit pending, 78% citation rate (complex queries), Custom Skills, Model Council (multi-model consensus answers), Samsung Galaxy S26, Plaid Finance + 40+ tools, Comet iOS launched (Mar 18), Health Suite live (Apple Health/EHR), Deep Research with Opus 4.5. **May 2026 Updates:** Expedia Group launching partner MCP server. |
-| **Claude** | ClaudeBot / anthropic-ai | Growing | **Opus 4.7** (Apr 2026, improved SWE + long-running task reliability), **Claude Mythos** in restricted testing ("step change in capabilities", safety concerns delaying public release), Opus 4.6 (1M context, Adaptive Thinking), Sonnet 4.6 (OSWorld 72.5%), Excel + PowerPoint integration (Mar 11), Skills system for repeatable workflows, Interactive Visuals (Mar 13), Cowork → Copilot integration (end Mar), Sonnet 5 "Fennec" leaked, Code Channels via Telegram/Discord (Mar 20), Anthropic vs Pentagon hearing (Mar 24) — "no kill switch" in air-gapped deployments, Persistent Memory for all users incl. free tier (Mar 2026) |
+| **ChatGPT** | GPTBot / ChatGPT-User | 1B+ MAU (May 2026) / 900M weekly | 80.49% AI chatbot market share (declining), **GPT-5.5 Instant** new default (May 5, 2026): 52.5% fewer hallucinations, enhanced Memory Sources transparency, Excel + Google Sheets sidebar global. GPT-5.5 Base (Apr 23, omnimodal agentic), GPT-5.4 live, GPT-5.3 Garlic API rollout (6x knowledge density, 2x speed), GPT-4o fully retired from all plans incl. Business/Enterprise/Edu Custom GPTs (Apr 3, 2026; API access remains). **May 2026 Updates:** OpenAI adopted SynthID watermarking for AI-generated images, formally joined C2PA standard, and integrated C2PA verification tools across ChatGPT/API. **June 2026:** Scheduled Tasks (automated recurring actions), "Dreaming" Memory (long-term context synthesis), OpenAI Partner Network ($150M, 300K consultants target), L'Oréal partnership (Maybelline ModiFace try-on in ChatGPT, GPT-Rosalind for skin science), World Cup 2026 live data, 1B+ monthly active app users (fastest app to 1B MAU, ~3.5 years). |
+| **Perplexity** | PerplexityBot | 100M+ MAU | **$450M+ ARR** (Mar 2026), ad-free model, Computer for Enterprise (Gmail/Slack/GitHub/Salesforce, 19-model orchestration), Personal Computer (Mac mini local agent), **Desktop Agent for Mac** (May 2026, hands-on assistance across desktop apps/files/workflows), CoreWeave multi-year partnership (GB200 NVL72), Amazon lawsuit — preliminary injunction granted (Mar 10, 2026): Comet browser blocked from Amazon Prime access, data destruction ordered, Perplexity appealing to 9th Circuit, class-action privacy lawsuit pending, 78% citation rate (complex queries), Custom Skills, Model Council (multi-model consensus answers), Samsung Galaxy S26, Plaid Finance + 40+ tools, Comet iOS launched (Mar 18), Health Suite live (Apple Health/EHR), Deep Research with Opus 4.5. **May 2026 Updates:** Expedia Group launching partner MCP server. **June 2026:** **Brain** self-improving memory for Computer agent (Context Graph + overnight synthesis, +25% accuracy, +16% recall, -13% cost), Hybrid Local/Server Inference with Intel (Computex). Research Preview for Max/Enterprise Max. |
+| **Claude** | ClaudeBot / anthropic-ai | Growing | **Opus 4.8** (May 28, 2026): 1M context, $5/$25 pricing, Dynamic Workflows in Claude Code. **Opus 4.7** (Apr 2026, improved SWE + long-running task reliability), Opus 4.6 (1M context, Adaptive Thinking), Sonnet 4.6 (OSWorld 72.5%), Excel + PowerPoint integration (Mar 11), Skills system for repeatable workflows, Interactive Visuals (Mar 13), Cowork → Copilot integration (end Mar), Sonnet 5 "Fennec" leaked, Code Channels via Telegram/Discord (Mar 20), Anthropic vs Pentagon hearing (Mar 24) — "no kill switch" in air-gapped deployments, Persistent Memory for all users incl. free tier (Mar 2026). **June 2026:** **Fable 5 / Mythos 5** launched June 9, suspended June 12 by US Export Control Directive — first time a US agency forces a commercial AI model offline. Claude Sonnet 4 + Opus 4 deprecated June 15. Anthropic investing $150M in 1,000 "Claude Corps" Fellowships |
 | **Gemini** | Google-Extended | Integrated in Google | 3.1 Pro (13/16 benchmarks, 2.5M token context), 3.1 Flash-Lite ($0.25/1M input), Embedding 2 (multimodal), Deep in Docs/Sheets/Slides/Drive (Mar 10), 3 Pro rolling out, Agentic Gemini on Pixel (third-party app execution, Mar 2026), Built-in Tools + Custom Function Calling combination + Google Maps Grounding (Mar 18). **I/O 2026 Updates:** Gemini 3.5 Flash default model. Added support for C2PA content credentials, with Chrome/Search integrations coming. |
 | **Copilot** | Bingbot | Integrated in Microsoft | Business-oriented |
-| **DeepSeek** | DeepSeekBot | 20M+ | Open-source R1 model, strong in reasoning tasks |
+| **DeepSeek** | DeepSeekBot | 20M+ | Open-source R1 model, strong in reasoning tasks. **V4-Pro** (June 2026): 1.6T parameters MoE, significantly lower inference costs. **$7.4B funding** (first external round), $50B+ valuation — most valuable Chinese AI startup. 16.3% token volume on OpenRouter. Microsoft testing fine-tuned V4 for "Copilot Cowork". Optimizing for Huawei Ascend 950 AI chips (US export restrictions). Chinese state fund participation with voting rights, private investors 5-year lock-up |
 | **Grok** | — | X/Twitter users | 4.20 Flagship model, real-time data focus |
 | **Meta AI** | meta-externalagent | 600M+ | **Muse Spark** (Apr 8, 2026): first model from Meta Superintelligence Labs (MSL). Proprietary (closed, unlike Llama). Natively multimodal (text+image+video), Visual CoT, Multi-Agent Orchestration, Health specialization (1,000+ physician training data). Rolling out to WhatsApp/Instagram/Facebook/Messenger/AI Glasses. „Manus“ AI Agent in Ads Manager |
 
@@ -465,12 +491,12 @@ The major AI search platforms to optimize for:
 
 ---
 
-## Market Context (May 2026)
+## Market Context (Jun 2026)
 
 - **Adobe acquired Semrush for $1.9B** (Nov 2025) — primarily for GEO capabilities, closing H1 2026. Semrush 2025 revenue: $443.6M (+18% YoY)
 - **Average AI readiness score: 17.1/100** across 166+ websites (🏗️ TrueSource AI data)
 - **~10% of domains** have llms.txt deployed
-- **EU AI Act Art. 50 enforcement: August 2, 2026** — 99 days away. Code of Practice 2nd draft published (Mar 5), two-layer system (metadata + watermarking), feedback deadline passed (Mar 30), final June 2026
+- **EU AI Act Art. 50 enforcement: August 2, 2026** — 44 days away. **Digital Omnibus** passed June 16 (423 yes, 57 no, 174 abstentions): machine-readable watermarking (Art. 50(2)) postponed to **December 2, 2026**; core transparency obligations remain August 2. "Nudifier" AI apps banned (Dec 2026 compliance). High-Risk standalone: Dec 2027. High-Risk safety components: Aug 2028. **Code of Practice on Transparency** published June 10 with standardized icons. Each EU member state must have min. 1 national AI Regulatory Sandbox by August 2
 - **India IT Rules 2026** (effective Feb 20) — mandatory C2PA provenance metadata, persistent machine-readable deepfake labels, 3-hour takedown window. First legally binding C2PA requirement globally
 - **AI Overviews in ~48-55%** of all Google queries (sources vary, up from >25%, 58% YoY increase), 42% organic click decline since AIO expansion, only 38% of AIO citations from Top 10 (down from 76%), AIOs on 14% of shopping queries (5.6x increase since Nov 2025)
 - **Google AI Mode: 75M DAUs** — 93% zero-click rate, UCP-powered Checkout, Shopping Ads, Signal-Matching, Canvas tool (coding + writing for all US users)
@@ -560,6 +586,28 @@ The major AI search platforms to optimize for:
 - **NSA MCP Security Guidelines** (May 20, 2026) — Cybersecurity Information Sheet issued by the NSA’s AI Security Center on MCP security design and vulnerability considerations (RCE risks via stdio/HTTP).
 - **Versa Networks MCP Zero-Trust Architecture** (May 2026) — introduced validation and logging controls for nonhuman agentic identities interacting via MCP.
 - **Google WebMCP Standard** (May 20, 2026) — proposed open standard from Google I/O 2026 to enable websites to expose client-side JavaScript tools for autonomous browser agents.
+- **UK CMA Fair Ranking Conduct Requirement** (June 17, 2026) — first regulation explicitly covering AI Overviews. Google must rank organic results (incl. AI-generated) by objective, non-discriminatory criteria. 6-month compliance timeline. Search Data Portability API within 3 months. Dispute channels required. Precedent-setting for EU regulation
+- **Adobe Brand Visibility** (June 17, 2026) — first Enterprise-grade GEO platform from a major vendor. Post-Semrush acquisition, ~300M real AI search prompts database. Validates GEO as standalone enterprise software category
+- **L'Oréal × OpenAI Partnership** (June 17, 2026, VivaTech Paris) — Maybelline ModiFace virtual try-on integrated directly into ChatGPT, GPT-Rosalind life sciences model for skin microbiome research, multi-brand advertising pilot (CeraVe, SkinCeuticals, Garnier). Blueprint for agentic commerce brand experiences
+- **Agentic Resource Discovery (ARD)** (June 17, 2026) — open standard (Apache 2.0) for `ai-catalog.json` agent discovery manifests. Founded by Google, Microsoft, Cisco, Databricks, GitHub, GoDaddy, Hugging Face, NVIDIA, Salesforce, ServiceNow, Snowflake. Complements MCP (tools/data) + A2A (agent-to-agent) + ARD (discovery)
+- **Shopify Spring '26 Edition** (June 17, 2026) — UCP fully self-serve (no approval process), Agent Context API, Mandatory AI Compatibility Manifest for App Store (July 1 deadline). Scripts sunset June 30 (silent failure risk)
+- **Slack MCP Client GA** (June 18, 2026) — Slackbot as full MCP client with 20+ partner apps. MCP enters mainstream enterprise communication
+- **Moneris MCP Server** (June 18, 2026) — third payment provider (after Nexi, Adyen) with native MCP server for agentic commerce
+- **Perplexity Brain** (June 18, 2026) — self-improving memory for Computer agent. Context Graph + overnight synthesis. +25% accuracy, +16% recall, -13% cost
+- **Sopra Steria EU Agentic Commerce Study** (June 2026) — €310B European e-commerce transactions through AI agents within 10 years. 41% of Europeans trust no single organization as shopping agent. Banks seen as most legitimate provider (27%)
+- **Google May 2026 Core Update** completed (May 21–June 2) — GEO-optimized sites saw **43% less negative impact** vs. SEO-only sites. E-E-A-T signals massively strengthened. Scaled AI content without expertise actively demoted
+- **Google Search Console GenAI Reports** (June 3, 2026) — first official reports for AI Overviews, AI Mode, Generative AI in Discover. Impressions only (no clicks yet). Opt-out toggle available
+- **MCP Spec 2026-07-28 RC** — breaking change to stateless protocol core. MCP Apps, Tasks extension, 12-month deprecation policy. Final release July 28
+- **Salesforce Agentic Advisor** (June 18, 2026) — Meeting Concierge GA for wealth managers within Agentforce for Financial Services
+- **WPP + AWS Multi-Year SCA** (June 18, 2026) — Composable Content Engine on Bedrock, 90% production time reduction. WPP Media agentic standards for video buying (Disney, Netflix, Paramount)
+- **Databricks Genie One** (June 16, 2026) — agentic AI coworker with Genie Ontology (self-improving context), Genie Agents (autonomous reusable), Slack/Teams integration
+- **FSB Sound Practices for AI** (June 10, 2026) — 12 non-binding practices, recommends treating AI agents as "synthetic employees". 52% of financial sector using agentic AI. Final report October 2026
+- **Claude Opus 4.8** (May 28, 2026) — 1M context, $5/$25 pricing, Dynamic Workflows. **Fable 5 / Mythos 5** launched June 9, suspended June 12 by US Export Control Directive
+- **DeepSeek V4-Pro + $7.4B funding** (June 2026) — 1.6T parameter MoE, $50B+ valuation, Chinese state fund with voting rights
+- **Alipay "A Bao" Agentic AI** (June 2026) — Ant Group upgrades super-app with AI assistant coordinating 10,000+ daily services. Gradual rollout to 1B users
+- **Forrester State of Agentic Commerce 2026** — consumer adoption low, B2B momentum strong. 75% enterprise leaders report adoption but mostly "agentish" chatbots
+- **Gartner: 40% enterprise apps** with task-specific AI agents by end 2026 (vs. <5% in 2025). Warning: 40% agentic projects risk cancellation by 2027 (governance gaps). "Agent Washing" concern
+- **Agentic Commerce Market: $7.7B (2026) → $65.5B (2033)** at 35.7% CAGR (Grand View Research)
 
 ---
 
