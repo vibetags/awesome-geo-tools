@@ -399,6 +399,7 @@ The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) enables AI a
 | **AWS MCP Server** | GA (May 6, 2026) — managed remote MCP server for AI agents to interact with AWS services. IAM guardrails, CloudWatch metrics, CloudTrail logging, sandboxed Python execution, "Agent Skills" format. First hyperscaler-backed managed MCP infrastructure | [aws.amazon.com](https://aws.amazon.com/mcp) |
 | **Sanity MCP** | Headless CMS with structured content — AI agents manage Schema.org-rich content models | [sanity.io](https://sanity.io) |
 | **SE Ranking MCP** | Exposes SEO and AI search competitive visibility data directly to AI developer agents | [seranking.com](https://seranking.com) |
+| **NotFair** | Open-source Claude Code skills + MCP servers for SEO/GEO and paid media — Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and GA4 MCP expose search, ads, and analytics data to AI agents | [GitHub](https://github.com/nowork-studio/NotFair) |
 | **Stainless MCP** | Automated SDK and MCP server generation tooling (acquired by Anthropic for $300M+) | [stainlessapi.com](https://stainlessapi.com) |
 | **Zendesk MCP** | Connects AI agents to customer support databases and conversation logs | [zendesk.com](https://zendesk.com) |
 | **Expedia Group MCP** | Exposes travel inventory and booking details to partner agents for autonomous planning | [expediagroup.com](https://expediagroup.com) |
