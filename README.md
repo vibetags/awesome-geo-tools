@@ -85,6 +85,7 @@ Tools that **track** how your brand appears in AI-generated answers.
 | **Sizzy** | AI visibility monitoring focused on brand presence in generative search environments | ChatGPT, Perplexity, Gemini | [sizzy.co](https://sizzy.co) |
 | **Amadora.ai** | Workflow-first AI visibility platform for agencies — tracks AI visibility and executes content improvements | ChatGPT, Perplexity, Gemini, Claude | [amadora.ai](https://amadora.ai) |
 | **Goodie AI** | GEO-first platform built specifically for AI attribution and visibility tracking (Apr 2026) | ChatGPT, Perplexity, Gemini, Claude | [goodie.ai](https://goodie.ai) |
+| **Lantern** | Agentic Commerce Performance platform — tracks Agent Ready Score, AI Visibility, and applies automated fixes on catalog level (July 2026) | ChatGPT, Perplexity, Gemini, Claude | [lantern.is](https://lantern.is) |
 | **Adobe Brand Visibility** | Enterprise GEO platform (post-Semrush acquisition for $1.9B) — unified AI visibility tracking across ~300M real AI search prompts, integrated with Adobe CX Enterprise Suite for agentic content optimization. AI traffic to US retail +1,324%, travel +2,215% (Oct 2024–May 2026). Launched June 17, 2026 | ChatGPT, Google AI Mode, Microsoft Copilot, Perplexity AI | [adobe.com](https://adobe.com) |
 
 ## Structured Data & Schema.org
@@ -139,6 +140,7 @@ Tools for resolving Entity Ambiguity — ensuring AI systems correctly identify 
 - **~10% of 300,000 domains** surveyed have llms.txt (as of Feb 2026)
 - Early adopters report measurable increases in AI citations
 - **527% YoY growth** in AI search traffic (2025), with 70%+ of AI searches ending without a click
+- **Google statement & Ahrefs study (Jun 2026):** llms.txt is formally NOT a ranking factor for Google AI Overviews. 97% of deployed files receive zero traffic from AI crawlers; shift to structural schemas is recommended.
 
 ### Examples
 - [Cloudflare llms.txt](https://developers.cloudflare.com/llms.txt)
@@ -409,6 +411,8 @@ The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) enables AI a
 | **Strapi MCP** | Built-in opt-in MCP server (v5.47.0) for CMS content access by AI agents | [strapi.io](https://strapi.io) |
 | **PagerDuty MCP** | MCP tools with OAuth, event orchestration, and service status for incident management | [pagerduty.com](https://pagerduty.com) |
 | **UiPath MCP** | MCP server integration in Test Manager and Autopilot Chat for RPA workflows | [uipath.com](https://uipath.com) |
+| **Apple Safari MCP** | Official Safari MCP server (Technology Preview 247) allowing AI agents direct interaction with web content and DOM (July 2026) | [webkit.org](https://webkit.org) |
+| **SnapLogic MCP Builder** | Automated generation of MCP servers from existing Enterprise APIs | [snaplogic.com](https://snaplogic.com) |
 
 ### Why MCP for GEO?
 
@@ -496,6 +500,8 @@ The major AI search platforms to optimize for:
 - **Adobe acquired Semrush for $1.9B** (Nov 2025) — primarily for GEO capabilities, closing H1 2026. Semrush 2025 revenue: $443.6M (+18% YoY)
 - **Average AI readiness score: 17.1/100** across 166+ websites (🏗️ TrueSource AI data)
 - **~10% of domains** have llms.txt deployed
+- **Visa Agentic Transactions (Jul 2026):** First live, real-world Agentic Commerce transactions in Europe using Visa Intelligent Commerce, establishing Agentic Commerce as a production-ready channel.
+- **Ecommpay Trust Report (Jun 2026):** Consumer awareness of AI agents rises in Europe, but checkout trust remains low, validating UCP discovery + native checkout strategy.
 - **EU AI Act Art. 50 enforcement: August 2, 2026** — 44 days away. **Digital Omnibus** passed June 16 (423 yes, 57 no, 174 abstentions): machine-readable watermarking (Art. 50(2)) postponed to **December 2, 2026**; core transparency obligations remain August 2. "Nudifier" AI apps banned (Dec 2026 compliance). High-Risk standalone: Dec 2027. High-Risk safety components: Aug 2028. **Code of Practice on Transparency** published June 10 with standardized icons. Each EU member state must have min. 1 national AI Regulatory Sandbox by August 2
 - **India IT Rules 2026** (effective Feb 20) — mandatory C2PA provenance metadata, persistent machine-readable deepfake labels, 3-hour takedown window. First legally binding C2PA requirement globally
 - **AI Overviews in ~48-55%** of all Google queries (sources vary, up from >25%, 58% YoY increase), 42% organic click decline since AIO expansion, only 38% of AIO citations from Top 10 (down from 76%), AIOs on 14% of shopping queries (5.6x increase since Nov 2025)
