@@ -87,6 +87,7 @@ Tools that **track** how your brand appears in AI-generated answers.
 | **Goodie AI** | GEO-first platform built specifically for AI attribution and visibility tracking (Apr 2026) | ChatGPT, Perplexity, Gemini, Claude | [goodie.ai](https://goodie.ai) |
 | **Lantern** | Agentic Commerce Performance platform — tracks Agent Ready Score, AI Visibility, and applies automated fixes on catalog level (July 2026) | ChatGPT, Perplexity, Gemini, Claude | [lantern.is](https://lantern.is) |
 | **Adobe Brand Visibility** | Enterprise GEO platform (post-Semrush acquisition for $1.9B) — unified AI visibility tracking across ~300M real AI search prompts, integrated with Adobe CX Enterprise Suite for agentic content optimization. AI traffic to US retail +1,324%, travel +2,215% (Oct 2024–May 2026). Launched June 17, 2026 | ChatGPT, Google AI Mode, Microsoft Copilot, Perplexity AI | [adobe.com](https://adobe.com) |
+| **BrandPulse** | Live GEO visibility check — type one brand name, get a dual heatmap of Google SERP rankings vs. AI-assistant mentions in ~10 seconds, with multi-run consistency scoring and a citation-vs-mention breakdown | Google SERP (live) + Claude (multi-run) | [brandpulseapp.onrender.com](https://brandpulseapp.onrender.com) |
 
 ## Structured Data & Schema.org
 
