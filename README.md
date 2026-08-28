@@ -63,6 +63,7 @@ Tools that **create** the signals AI systems need to discover and recommend your
 | **PageMind** | E-Commerce AEO automation — optimizes product data and content for discoverability in AI search engines (ChatGPT, Gemini). €1.2M funding (Jul 2026) | SaaS | [pagemind.ai](https://pagemind.ai) |
 | **Salestrics** | AI-native revenue workspace — unified Momentum CRM, Mail, Resolve support desk, AI Application Studio, PraiseEngine. Global launch Aug 3, 2026. AI discovery features for revenue operations and AI engine visibility | SaaS | [salestrics.com](https://salestrics.com) |
 
+| **HITZ Free GEO Page Audit** | Audits a page for direct answers, entity signals, trust, and technical setup. Returns a score and recommendations in about ten seconds. | Free Web Tool | [hitz.agency](https://hitz.agency/en/tools/geo-audit) |
 ## AI Visibility Monitoring
 
 Tools that **track** how your brand appears in AI-generated answers.
