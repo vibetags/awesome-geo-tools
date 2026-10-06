@@ -95,6 +95,7 @@ Tools that **track** how your brand appears in AI-generated answers.
 | **Adobe Brand Visibility** | Enterprise GEO platform (post-Semrush acquisition for $1.9B) — unified AI visibility tracking across ~300M real AI search prompts, integrated with Adobe CX Enterprise Suite for agentic content optimization. AI traffic to US retail +1,324%, travel +2,215% (Oct 2024–May 2026). Launched June 17, 2026 | ChatGPT, Google AI Mode, Microsoft Copilot, Perplexity AI | [adobe.com](https://adobe.com) |
 | **Featured** | PR-driven GEO platform — analyzes brand presence and citation gaps in AI search engines (ChatGPT, Perplexity, Gemini, Claude) with automated PR pitch drafting. AI Citation Report (Aug 2026, 22K+ citations analyzed): **33%+ of AI citations come from DA < 40 domains** | ChatGPT, Perplexity, Gemini, Claude | [featured.com](https://featured.com) |
 | **BotRank.ai** | All-in-one GEO platform from France — crawler evaluates 25+ technical and structural criteria (robots.txt, schema, semantic density), paired with AI agent "Bob" for automated content and code remediation (Aug 2026) | ChatGPT, Gemini, Perplexity, Mistral | [botrank.ai](https://botrank.ai) |
+| **Screpy** | Prompt-based AI visibility monitoring with brand mentions, citations, sentiment, source URLs, and competitor share of voice | OpenAI, Gemini, Perplexity (Pro plan) | [AI Visibility](https://screpy.com/feature/ai-visibility/) |
 
 ## Structured Data & Schema.org
 
