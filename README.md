@@ -436,6 +436,7 @@ The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) enables AI a
 | **JFrog MCP Registry** | System of record for MCP servers, agent skills, and agentic binary assets — AI supply chain trust layer | [jfrog.com](https://jfrog.com) |
 | **AWS MCP Server** | GA (May 6, 2026) — managed remote MCP server for AI agents to interact with AWS services. IAM guardrails, CloudWatch metrics, CloudTrail logging, sandboxed Python execution, "Agent Skills" format. First hyperscaler-backed managed MCP infrastructure | [aws.amazon.com](https://aws.amazon.com/mcp) |
 | **Sanity MCP** | Headless CMS with structured content — AI agents manage Schema.org-rich content models | [sanity.io](https://sanity.io) |
+| **AgentSEO MCP** (hosted) | Analyze Google AI Overviews and run repeatable AI search prompts to check brand mentions; tool calls require an API key and usage credits | [agentseo.dev](https://www.agentseo.dev/seo-mcp-server) |
 | **SE Ranking MCP** | Exposes SEO and AI search competitive visibility data directly to AI developer agents | [seranking.com](https://seranking.com) |
 | **Stainless MCP** | Automated SDK and MCP server generation tooling (acquired by Anthropic for $300M+) | [stainlessapi.com](https://stainlessapi.com) |
 | **Zendesk MCP** | Connects AI agents to customer support databases and conversation logs | [zendesk.com](https://zendesk.com) |
