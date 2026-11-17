@@ -520,6 +520,8 @@ The major AI search platforms to optimize for:
 
 ## Guides & How-Tos
 
+- [GEO Lab: AI Visibility Measurement Guide](https://helen-bird.github.io/geo-platform-observation/learning-hub/measurement/) — A free manual measurement workflow with a downloadable Excel worksheet and a worked example backed by ten saved answers.
+
 ### Official Documentation & Guides
 - [Google Search Central: Optimizing for Generative AI](https://developers.google.com/search/blog/2026/05/optimizing-generative-ai) — Google's official guidance on generative AI search optimization (issued May 15, 2026).
 - **FAQ Rich Results Deprecated** (May 7, 2026) — Google officially retired FAQ rich results support, reinforcing the shift towards comprehensive entity and semantic E-E-A-T optimization over isolated markup.
